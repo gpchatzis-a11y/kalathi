@@ -1,0 +1,101 @@
+{
+ "2026-11-23": {
+  "alevri-allatini-1kg": {
+   "ab": 1.29,
+   "masoutis": 1.7,
+   "mymarket": 1.29
+  },
+  "charti-softex-silk-8": {
+   "masoutis": 4.25,
+   "mymarket": 3.79
+  },
+  "coca-cola-1-5lt": {
+   "ab": 1.96,
+   "masoutis": 1.94,
+   "mymarket": 1.82
+  },
+  "corn-flakes-kelloggs-375g": {
+   "ab": 3.08,
+   "masoutis": 3.85,
+   "mymarket": 3.83
+  },
+  "elaiolado-altis-1lt": {
+   "ab": 7.15,
+   "masoutis": 7.15,
+   "mymarket": 6.95
+  },
+  "fairy-ultra-900ml": {
+   "ab": 2.89,
+   "masoutis": 3.45,
+   "mymarket": 2.68
+  },
+  "feta-dodoni-400g": {
+   "ab": 7.5,
+   "masoutis": 7.5,
+   "mymarket": 7.58
+  },
+  "gala-delta-fresko-1lt": {
+   "ab": 1.77,
+   "masoutis": 1.78,
+   "mymarket": 1.77
+  },
+  "gala-nounou-evapore-400g": {
+   "ab": 1.26,
+   "masoutis": 1.26,
+   "mymarket": 0.88
+  },
+  "giaourti-total-2-1kg": {
+   "ab": 5.35,
+   "masoutis": 5.35,
+   "mymarket": 5.3
+  },
+  "kafes-loumidis-96g": {
+   "ab": 2.54,
+   "masoutis": 2.54,
+   "mymarket": 2.54
+  },
+  "meli-attiki-455g": {
+   "ab": 8.65,
+   "masoutis": 8.24,
+   "mymarket": 8.24
+  },
+  "nero-zagori-6x1-5lt": {
+   "ab": 1.87,
+   "masoutis": 1.87,
+   "mymarket": 1.87
+  },
+  "nescafe-classic-100g": {
+   "masoutis": 5.44,
+   "mymarket": 5.44
+  },
+  "passata-pummaro-500g": {
+   "ab": 0.7,
+   "masoutis": 0.78,
+   "mymarket": 0.7
+  },
+  "psomi-tost-karamolegkos-480g": {
+   "ab": 1.94,
+   "masoutis": 1.94,
+   "mymarket": 1.94
+  },
+  "pti-mper-allatini-225g": {
+   "ab": 1.11,
+   "masoutis": 1.07,
+   "mymarket": 1.03
+  },
+  "rizi-agrino-karolina-500g": {
+   "ab": 2.4,
+   "masoutis": 2.36,
+   "mymarket": 2.55
+  },
+  "spaggeti-melissa-no6-500g": {
+   "ab": 0.72,
+   "masoutis": 0.72,
+   "mymarket": 0.75
+  },
+  "voutyro-lurpak-225g": {
+   "ab": 4.89,
+   "mymarket": 4.71
+  }
+ }
+}

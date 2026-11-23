@@ -1,0 +1,213 @@
+{
+ "updated": "2026-11-23T20:37+02:00",
+ "chains": {
+  "mymarket": "My Market",
+  "ab": "ΑΒ Βασιλόπουλος",
+  "masoutis": "Μασούτης"
+ },
+ "products": [
+  {
+   "id": "gala-delta-fresko-1lt",
+   "name": "ΔΕΛΤΑ Καθημερινά φρέσκο γάλα πλήρες 1lt",
+   "category": "Γαλακτοκομικά",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/delta-kathimerina-fresko-gala-plires-1lt",
+    "ab": "https://www.ab.gr/el/eshop/Galaktokomika-Fytika-Rofimata-and-Eidi-Psygeioy/Gala-and-Fytika-Rofimata/Fresko-gala/Gala-Fresko-Kathimerina-Plires-1lt/p/7617631",
+    "masoutis": "https://www.masoutis.gr/categories/item/delta-kathhmerina-fresko-gala-plhres-35--lipara-1lt?3834728="
+   }
+  },
+  {
+   "id": "gala-nounou-evapore-400g",
+   "name": "ΝΟΥΝΟΥ γάλα εβαπορέ πλήρες 400g",
+   "category": "Γαλακτοκομικά",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/nounou-sympyknomeno-gala-400gr",
+    "ab": "https://www.ab.gr/el/eshop/Galaktokomika-Fytika-Rofimata-and-Eidi-Psygeioy/Gala-and-Fytika-Rofimata/Gala-Evapore/Gala-Sympyknomeno-Plires-400-gr/p/7133978",
+    "masoutis": "https://www.masoutis.gr/categories/item/nounou-gala-sumpuknwmeno-400gr-?2730059="
+   }
+  },
+  {
+   "id": "giaourti-total-2-1kg",
+   "name": "ΦΑΓΕ Total γιαούρτι στραγγιστό 2% 1kg",
+   "category": "Γαλακτοκομικά",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/fage-total-straggisto-giaourti-2-lipara-1kg",
+    "ab": "https://www.ab.gr/el/eshop/Galaktokomika-Fytika-Rofimata-and-Eidi-Psygeioy/Giaoyrtia/Leyka-giaoyrtia/Giaoyrti-Straggisto-2-1kg/p/7079032",
+    "masoutis": "https://www.masoutis.gr/categories/item/fage-total-giaourti-straggisto-2--lipara-1kg?2007409="
+   }
+  },
+  {
+   "id": "feta-dodoni-400g",
+   "name": "ΔΩΔΩΝΗ φέτα ΠΟΠ σε άλμη 400g",
+   "category": "Γαλακτοκομικά",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/dodoni-feta-se-almi-400gr",
+    "ab": "https://www.ab.gr/el/eshop/Tyria-Fytika-Anapliromata-and-Allantika/Tyria/Feta/Tyri-Feta-POP-Se-Almi-400gr/p/7076247",
+    "masoutis": "https://www.masoutis.gr/categories/item/dwdwnh-feta-pop-se-almh-400gr?1416452="
+   }
+  },
+  {
+   "id": "voutyro-lurpak-225g",
+   "name": "LURPAK βούτυρο ανάλατο σκαφάκι 225g",
+   "category": "Γαλακτοκομικά",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/lurpak-voutyro-analato-skafaki-225gr",
+    "ab": "https://www.ab.gr/el/eshop/Galaktokomika-Fytika-Rofimata-and-Eidi-Psygeioy/Voytyro-Margarini/Voytyro/Voytyro-Analato-Skafaki-225g/p/7133607",
+    "masoutis": null
+   }
+  },
+  {
+   "id": "spaggeti-melissa-no6-500g",
+   "name": "ΜΕΛΙΣΣΑ σπαγγέτι Νο6 500g",
+   "category": "Βασικά τρόφιμα",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/melissa-spaggeti-no-6-500gr",
+    "ab": "https://www.ab.gr/el/eshop/Vasika-typopoiimena-trofima/Zymarika/Makaronia/Spaggeti-No6-500g/p/7064946",
+    "masoutis": "https://www.masoutis.gr/categories/item/melissa-spaggeti-no6-500gr?0048017="
+   }
+  },
+  {
+   "id": "rizi-agrino-karolina-500g",
+   "name": "AGRINO ρύζι Καρολίνα Λάις 500g",
+   "category": "Βασικά τρόφιμα",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/agrino-ryzi-lais-karolina-gia-rizoto-ellados-500gr",
+    "ab": "https://www.ab.gr/el/eshop/Vasika-typopoiimena-trofima/Ryzi-Ospria/Ryzi-leyko/Ryzi-Karolina-Lais-Elliniko-500g/p/7283643",
+    "masoutis": "https://www.masoutis.gr/categories/item/agrino-lais-ruzi-karolina-500gr?2350072="
+   }
+  },
+  {
+   "id": "alevri-allatini-1kg",
+   "name": "ΑΛΛΑΤΙΝΗ αλεύρι για όλες τις χρήσεις 1kg",
+   "category": "Βασικά τρόφιμα",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/allatini-alevri-gia-oles-tis-chriseis-1kg",
+    "ab": "https://www.ab.gr/el/eshop/Vasika-typopoiimena-trofima/Aleyri-Simigdali/Aleyri-olon-ton-chriseon/Aleyri-Gia-Oles-tis-Chriseis-1kg/p/7087562",
+    "masoutis": "https://www.masoutis.gr/categories/item/allatinh-aleuri-gia-oles-tis-xrhseis-1kg?0026187="
+   }
+  },
+  {
+   "id": "elaiolado-altis-1lt",
+   "name": "ΑΛΤΙΣ ελαιόλαδο κλασικό 1lt",
+   "category": "Βασικά τρόφιμα",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/altis-klasiko-elaiolado-1lt",
+    "ab": "https://www.ab.gr/el/eshop/Vasika-typopoiimena-trofima/Elaiolado-and-Elies/Elaiolado-Klasiko/Elaiolado-Klasiko-1lt/p/7085999",
+    "masoutis": "https://www.masoutis.gr/categories/item/altis-elaiolado-klasiko-1lt?0000018="
+   }
+  },
+  {
+   "id": "passata-pummaro-500g",
+   "name": "PUMMARO passata κλασικός 500g",
+   "category": "Βασικά τρόφιμα",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/pummaro-chymo-tomatas-klassikos-sympyknomenos-500gr",
+    "ab": "https://www.ab.gr/el/eshop/Vasika-typopoiimena-trofima/Konserves/Passata/Tomata-Passata-Klasiko-500-gr/p/7085895",
+    "masoutis": "https://www.masoutis.gr/categories/item/pummaro-passata-tomatoxumos-klasikos-500gr?0002196="
+   }
+  },
+  {
+   "id": "meli-attiki-455g",
+   "name": "ΑΤΤΙΚΗ μέλι 455g",
+   "category": "Πρωινό",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/attiki-meli-455gr",
+    "ab": "https://www.ab.gr/el/eshop/Proino-snacking-and-rofimata/Meli/Melia-Antheon-Konoforon/Meli-Klasiko-455g/p/7083018",
+    "masoutis": "https://www.masoutis.gr/categories/item/attikh-meli-ellhniko-455gr-?0026278="
+   }
+  },
+  {
+   "id": "kafes-loumidis-96g",
+   "name": "ΛΟΥΜΙΔΗΣ Παπαγάλος ελληνικός καφές 96g",
+   "category": "Πρωινό",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/loumidis-papagalos-kafes-ellinikos-paradosiakos-96gr",
+    "ab": "https://www.ab.gr/el/eshop/Proino-snacking-and-rofimata/Kafes/Ellinikos-Kafes/Kafes-Ellinikos-Paradosiakos-96g/p/7656475",
+    "masoutis": "https://www.masoutis.gr/categories/item/loumidhs-papagalos-kafes-ellhnikos-paradosiakos-96gr?0019562="
+   }
+  },
+  {
+   "id": "nescafe-classic-100g",
+   "name": "NESCAFE Classic στιγμιαίος καφές 100g",
+   "category": "Πρωινό",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/nescafe-classic-stigmiaios-kafes-100gr",
+    "ab": null,
+    "masoutis": "https://www.masoutis.gr/categories/item/nescafe-classic-kafes-stigmiaios-100gr?0018275="
+   }
+  },
+  {
+   "id": "pti-mper-allatini-225g",
+   "name": "ΑΛΛΑΤΙΝΗ Πτι Μπερ μπισκότα 225g",
+   "category": "Πρωινό",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/allatini-pti-mper-mpskota-klassika-225gr",
+    "ab": "https://www.ab.gr/el/eshop/Proino-snacking-and-rofimata/Mpiskota/Apla-Mpiskota/Mpiskota-Pti-Mper-Klasiko-225g/p/7066719",
+    "masoutis": "https://www.masoutis.gr/categories/item/allatinh-pti-mper-mpiskota-225gr?0028167="
+   }
+  },
+  {
+   "id": "corn-flakes-kelloggs-375g",
+   "name": "KELLOGG'S Corn Flakes 375g",
+   "category": "Πρωινό",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/kelloggs-dimitriaka-corn-flakes-375gr",
+    "ab": "https://www.ab.gr/el/eshop/Proino-snacking-and-rofimata/Dimitriaka/Corn-flakes/Dimitriaka-Corn-Flakes-375gr/p/7427597",
+    "masoutis": "https://www.masoutis.gr/categories/item/kellogg's-corn-flakes-dhmhtriaka-375gr?0042143="
+   }
+  },
+  {
+   "id": "psomi-tost-karamolegkos-480g",
+   "name": "ΚΑΡΑΜΟΛΕΓΚΟΣ ψωμί τοστ ψίχα σταρένιο 480g",
+   "category": "Αρτοποιία",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/karamolegkos-psomi-tost-psicha-starenio-480gr",
+    "ab": "https://www.ab.gr/el/eshop/Artos-Zacharoplasteio/Psomi-toy-tost/Psomi-toy-tost-Sitoy/Psomi-Tost-Psicha-Sitoy-480g/p/7089061",
+    "masoutis": "https://www.masoutis.gr/categories/item/karamolegkos-psixa-tost-pswmi-starenio-se-fetes-480gr?1931351="
+   }
+  },
+  {
+   "id": "coca-cola-1-5lt",
+   "name": "Coca-Cola 1,5lt",
+   "category": "Ποτά & νερό",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/coca-cola-15lt-1tem",
+    "ab": "https://www.ab.gr/el/eshop/Kava-anapsyktika-nera-xiroi-karpoi/Anapsyktika/Cola/Anapsyktiko-Cola-Fiali-1-5lt/p/7092468",
+    "masoutis": "https://www.masoutis.gr/categories/item/coca-cola-15lt?0013011="
+   }
+  },
+  {
+   "id": "nero-zagori-6x1-5lt",
+   "name": "ΖΑΓΟΡΙ φυσικό μεταλλικό νερό 6x1,5lt",
+   "category": "Ποτά & νερό",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/zagori-fysiko-metalliko-nero-15lt-6tem",
+    "ab": "https://www.ab.gr/el/eshop/Kava-anapsyktika-nera-xiroi-karpoi/Nera/Epitrapezio-Metalliko-Nero/Nero-Fysiko-Metalliko-6x1-5lt/p/7092004",
+    "masoutis": "https://www.masoutis.gr/categories/item/zagori-fusiko-metalliko-nero-6x15lt-?0420356="
+   }
+  },
+  {
+   "id": "fairy-ultra-900ml",
+   "name": "FAIRY Ultra υγρό πιάτων 900ml",
+   "category": "Καθαριότητα",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/fairy-ultra-original-ygro-piaton-900ml",
+    "ab": "https://www.ab.gr/el/eshop/Katharistika-Chartika-and-eidi-spitioy/Aporrypantika-Piaton/Aporrypantika-Piaton-gia-plysimo-sto-cheri/Ygro-Aporrypantiko-Piaton-Ultra-900ml/p/7126722",
+    "masoutis": "https://www.masoutis.gr/categories/item/fairy-ultra-ugro-aporrupantiko-piatwn-original-900ml?2673101="
+   }
+  },
+  {
+   "id": "charti-softex-silk-8",
+   "name": "SOFTEX Silk χαρτί υγείας 3φυλλο 8 ρολά",
+   "category": "Καθαριότητα",
+   "urls": {
+    "mymarket": "https://www.mymarket.gr/softex-silk-charti-ygeias-3-fyllon-8ari-0760kg",
+    "ab": null,
+    "masoutis": "https://www.masoutis.gr/categories/item/softex-xarti-ugeias-silk-3fullwn-8tem-760gr?3291994="
+   }
+  }
+ ],
+ "errors": [],
+ "ok": 57,
+ "total": 57
+}

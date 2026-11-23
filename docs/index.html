@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Καλάθι — τιμές σούπερ μάρκετ</title>
+<style>
+.viz-root {
+  color-scheme: light;
+  --surface-0: #f4f3f0;
+  --surface-1: #fcfcfb;
+  --border: #e2e1dc;
+  --grid: #ebeae6;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #7a7974;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --good: #006300;
+  --bad: #b42b2b;
+  --hl: #e8f1fc;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .viz-root {
+    color-scheme: dark;
+    --surface-0: #111110;
+    --surface-1: #1a1a19;
+    --border: #2f2f2c;
+    --grid: #262624;
+    --text-primary: #f0efec;
+    --text-secondary: #c3c2b7;
+    --text-muted: #8f8e86;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --good: #4cc44c;
+    --bad: #ef7b7b;
+    --hl: #1d2a3a;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.viz-root { background: var(--surface-0); color: var(--text-primary); min-height: 100vh; padding: 24px 16px 48px; }
+.wrap { max-width: 1040px; margin: 0 auto; }
+h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 16px; margin: 0 0 12px; }
+.sub { color: var(--text-secondary); margin: 0 0 20px; }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 16px; }
+.muted { color: var(--text-muted); font-size: 13px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+.tile .lbl { display: flex; align-items: center; gap: 8px; color: var(--text-secondary); font-size: 14px; }
+.tile .val { font-size: 28px; font-weight: 650; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.tile .delta { font-size: 13px; color: var(--text-secondary); }
+.tile.best { outline: 2px solid var(--series-1); outline-offset: -2px; }
+.badge { font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 99px; background: var(--hl); color: var(--text-primary); margin-left: auto; }
+.sw { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.chart { position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.tip { position: absolute; pointer-events: none; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 13px; box-shadow: 0 4px 16px rgba(0,0,0,.12); display: none; min-width: 170px; z-index: 2; }
+.tip .row { display: flex; align-items: center; gap: 6px; }
+.tip .row b { margin-left: auto; font-variant-numeric: tabular-nums; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.controls button { font: inherit; font-size: 13px; padding: 5px 12px; border-radius: 99px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary); cursor: pointer; }
+.controls button[aria-pressed="true"] { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--grid); text-align: right; white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; white-space: normal; }
+th { font-size: 13px; color: var(--text-secondary); font-weight: 600; }
+th .sw { display: inline-block; margin-right: 6px; vertical-align: -1px; }
+td.cheap { background: var(--hl); font-weight: 650; }
+td.cheap::after { content: " ▼"; font-size: 10px; color: var(--text-secondary); }
+td .chg { display: block; font-size: 11px; font-weight: 500; }
+.up { color: var(--bad); } .down { color: var(--good); }
+td a { color: inherit; text-decoration: none; } td a:hover { text-decoration: underline; }
+.cat { font-size: 12px; color: var(--text-muted); }
+.scroll { overflow-x: auto; }
+.err li { margin: 2px 0; }
+footer { color: var(--text-muted); font-size: 12px; margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="viz-root">
+<div class="wrap">
+  <h1>Καλάθι — τιμές σούπερ μάρκετ</h1>
+  <p class="sub" id="sub">Φόρτωση…</p>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="card">
+    <h2>Κόστος συγκρίσιμου καλαθιού ανά ημέρα</h2>
+    <div class="legend" id="legend"></div>
+    <div class="chart" id="chart"><svg id="svg" role="img" aria-label="Εξέλιξη κόστους καλαθιού ανά αλυσίδα"></svg><div class="tip" id="tip"></div></div>
+    <p class="muted" id="chartNote"></p>
+  </div>
+
+  <div class="card">
+    <h2>Τιμές ανά προϊόν</h2>
+    <div class="controls" id="cats"></div>
+    <div class="scroll"><table id="tbl"></table></div>
+    <p class="muted">▼ = φθηνότερη τιμή σήμερα. Το μικρό ποσό κάτω από κάθε τιμή είναι η αλλαγή από την προηγούμενη μέτρηση.</p>
+  </div>
+
+  <div class="card" id="errCard" hidden>
+    <h2>Τιμές που δεν συλλέχθηκαν σήμερα</h2>
+    <ul class="err muted" id="errs"></ul>
+  </div>
+
+  <footer>Οι τιμές συλλέγονται αυτόματα μία φορά την ημέρα από τις δημόσιες σελίδες των e-shop. Είναι τιμές e-shop, πανελλαδικές, και μπορεί να διαφέρουν λίγο από το φυσικό κατάστημα.</footer>
+</div>
+</div>
+
+<script>
+const SERIES = ["mymarket", "ab", "masoutis"];        // σταθερή σειρά χρωμάτων ανά αλυσίδα
+const color = c => `var(--series-${SERIES.indexOf(c) + 1})`;
+const eur = v => v == null ? "—" : v.toLocaleString("el-GR", { style: "currency", currency: "EUR" });
+const fmtDate = d => new Date(d + "T12:00:00").toLocaleDateString("el-GR", { day: "numeric", month: "short" });
+const el = (tag, attrs = {}, html = "") => { const e = document.createElement(tag); for (const k in attrs) e.setAttribute(k, attrs[k]); e.innerHTML = html; return e; };
+
+Promise.all([fetch("data/meta.json").then(r => r.json()), fetch("data/history.json").then(r => r.json())])
+  .then(([meta, hist]) => render(meta, hist))
+  .catch(e => { document.getElementById("sub").textContent = "Δεν βρέθηκαν δεδομένα ακόμα: " + e; });
+
+function render(meta, hist) {
+  const chains = SERIES.filter(c => meta.chains[c]);
+  const dates = Object.keys(hist).sort();
+  const today = dates[dates.length - 1];
+  const prev = dates.length > 1 ? dates[dates.length - 2] : null;
+  const products = meta.products;
+
+  // Συγκρίσιμο καλάθι: τα προϊόντα που έχουν τιμή σε ΟΛΕΣ τις αλυσίδες εκείνη τη μέρα
+  const basketOn = d => {
+    const day = hist[d] || {};
+    const ids = products.map(p => p.id).filter(id => chains.every(c => day[id] && day[id][c] != null));
+    const totals = Object.fromEntries(chains.map(c => [c, ids.reduce((s, id) => s + day[id][c], 0)]));
+    return { ids, totals };
+  };
+  const bToday = basketOn(today);
+  const bPrev = prev ? basketOn(prev) : null;
+
+  document.getElementById("sub").textContent =
+    `Τελευταία ενημέρωση: ${new Date(meta.updated).toLocaleString("el-GR", { dateStyle: "medium", timeStyle: "short" })} · ` +
+    `${products.length} προϊόντα · ${chains.length} αλυσίδες · ${meta.ok}/${meta.total} τιμές σήμερα`;
+
+  // ---- Tiles
+  const tiles = document.getElementById("tiles");
+  const best = chains.reduce((a, c) => bToday.totals[c] < bToday.totals[a] ? c : a, chains[0]);
+  chains.forEach(c => {
+    const t = bToday.totals[c];
+    let delta = "";
+    if (bPrev && bPrev.totals[c] && bPrev.ids.length === bToday.ids.length) {
+      const d = t - bPrev.totals[c];
+      delta = Math.abs(d) < 0.005 ? "Χωρίς αλλαγή από χθες" :
+        `<span class="${d > 0 ? "up" : "down"}">${d > 0 ? "▲" : "▼"} ${eur(Math.abs(d))}</span> από την προηγούμενη μέτρηση`;
+    } else {
+      const diff = t - bToday.totals[best];
+      delta = c === best ? "Φθηνότερη σήμερα" : `+${eur(diff)} (+${(diff / bToday.totals[best] * 100).toFixed(1)}%) από τη φθηνότερη`;
+    }
+    const tile = el("div", { class: "tile" + (c === best ? " best" : "") },
+      `<div class="lbl"><span class="sw" style="background:${color(c)}"></span>${meta.chains[c]}${c === best ? '<span class="badge">Φθηνότερη</span>' : ""}</div>
+       <div class="val">${eur(t)}</div><div class="delta">${delta}</div>`);
+    tiles.appendChild(tile);
+  });
+  tiles.appendChild(el("div", { class: "tile" },
+    `<div class="lbl">Συγκρίσιμο καλάθι</div><div class="val">${bToday.ids.length}</div>
+     <div class="delta">προϊόντα που υπάρχουν και στις ${chains.length} αλυσίδες σήμερα</div>`));
+
+  // ---- Legend
+  const lg = document.getElementById("legend");
+  chains.forEach(c => lg.appendChild(el("span", {}, `<span class="sw" style="background:${color(c)}"></span>${meta.chains[c]}`)));
+
+  drawChart(dates.map(d => ({ d, ...basketOn(d) })), chains, meta);
+
+  // ---- Table
+  const cats = ["Όλα", ...new Set(products.map(p => p.category))];
+  const cbox = document.getElementById("cats");
+  let current = "Όλα";
+  cats.forEach(cat => {
+    const b = el("button", { type: "button", "aria-pressed": cat === current }, cat);
+    b.onclick = () => { current = cat; [...cbox.children].forEach(x => x.setAttribute("aria-pressed", x === b)); drawTable(); };
+    cbox.appendChild(b);
+  });
+  function drawTable() {
+    const tbl = document.getElementById("tbl");
+    const day = hist[today] || {}, pday = prev ? hist[prev] || {} : {};
+    let h = `<thead><tr><th>Προϊόν</th>${chains.map(c => `<th><span class="sw" style="background:${color(c)}"></span>${meta.chains[c]}</th>`).join("")}</tr></thead><tbody>`;
+    products.filter(p => current === "Όλα" || p.category === current).forEach(p => {
+      const row = day[p.id] || {};
+      const vals = chains.map(c => row[c]).filter(v => v != null);
+      const min = vals.length > 1 ? Math.min(...vals) : null;
+      h += `<tr><td>${p.name}<div class="cat">${p.category}</div></td>`;
+      chains.forEach(c => {
+        const v = row[c], pv = pday[p.id] && pday[p.id][c];
+        let chg = "";
+        if (v != null && pv != null && Math.abs(v - pv) >= 0.005)
+          chg = `<span class="chg ${v > pv ? "up" : "down"}">${v > pv ? "+" : "−"}${eur(Math.abs(v - pv))}</span>`;
+        const url = p.urls && p.urls[c];
+        const cell = v == null ? "—" : (url ? `<a href="${url}" target="_blank" rel="noopener">${eur(v)}</a>` : eur(v));
+        h += `<td class="${min != null && v === min ? "cheap" : ""}">${cell}${chg}</td>`;
+      });
+      h += "</tr>";
+    });
+    tbl.innerHTML = h + "</tbody>";
+  }
+  drawTable();
+
+  // ---- Errors
+  if (meta.errors && meta.errors.length) {
+    document.getElementById("errCard").hidden = false;
+    const name = id => (products.find(p => p.id === id) || {}).name || id;
+    document.getElementById("errs").innerHTML = meta.errors.map(e => `<li>${name(e.product)} — ${meta.chains[e.chain] || e.chain}</li>`).join("");
+  }
+}
+
+function drawChart(series, chains, meta) {
+  const svg = document.getElementById("svg"), tip = document.getElementById("tip");
+  const W = 960, H = 280, m = { l: 56, r: 16, t: 12, b: 28 };
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const pts = series.filter(s => s.ids.length);
+  const note = document.getElementById("chartNote");
+  if (!pts.length) { note.textContent = "Δεν υπάρχουν ακόμα δεδομένα."; return; }
+  note.textContent = pts.length < 2
+    ? "Υπάρχει μόνο μία μέτρηση μέχρι στιγμής. Το γράφημα θα γεμίζει κάθε μέρα."
+    : "Το σύνολο αφορά μόνο τα προϊόντα που υπήρχαν σε όλες τις αλυσίδες κάθε μέρα.";
+  const all = pts.flatMap(s => chains.map(c => s.totals[c]));
+  let lo = Math.min(...all), hi = Math.max(...all);
+  const pad = Math.max((hi - lo) * 0.15, 1);
+  const tstep = [1, 2, 5, 10, 20, 50].find(s => (hi - lo + 2 * pad) / s <= 6) || 100;
+  lo = Math.floor((lo - pad) / tstep) * tstep; hi = Math.ceil((hi + pad) / tstep) * tstep;
+  const x = i => pts.length === 1 ? (m.l + W - m.r) / 2 : m.l + i * (W - m.l - m.r) / (pts.length - 1);
+  const y = v => m.t + (hi - v) * (H - m.t - m.b) / (hi - lo);
+  let g = "";
+  for (let v = lo; v <= hi + 1e-9; v += tstep) {
+    g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)" stroke-width="1"/>
+          <text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end" font-size="12" fill="var(--text-muted)">${v.toFixed(0)} €</text>`;
+  }
+  const step = Math.max(1, Math.ceil(pts.length / 8));
+  pts.forEach((s, i) => { if (i % step === 0 || i === pts.length - 1)
+    g += `<text x="${x(i)}" y="${H - 6}" text-anchor="middle" font-size="12" fill="var(--text-muted)">${fmtDate(s.d)}</text>`; });
+  chains.forEach(c => {
+    const d = pts.map((s, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(s.totals[c]).toFixed(1)}`).join("");
+    if (pts.length > 1) g += `<path d="${d}" fill="none" stroke="${color(c)}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+    const last = pts.length - 1;
+    g += `<circle cx="${x(last)}" cy="${y(pts[last].totals[c])}" r="4.5" fill="${color(c)}" stroke="var(--surface-1)" stroke-width="2"/>`;
+  });
+  g += `<line id="xh" x1="0" x2="0" y1="${m.t}" y2="${H - m.b}" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="3 3" visibility="hidden"/>`;
+  g += `<rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" fill="transparent" id="hit"/>`;
+  svg.innerHTML = g;
+  const hit = svg.querySelector("#hit"), xh = svg.querySelector("#xh");
+  const show = ev => {
+    const r = svg.getBoundingClientRect();
+    const sx = (ev.clientX - r.left) * W / r.width;
+    let i = 0, best = Infinity;
+    pts.forEach((_, k) => { const dd = Math.abs(x(k) - sx); if (dd < best) { best = dd; i = k; } });
+    const s = pts[i];
+    xh.setAttribute("x1", x(i)); xh.setAttribute("x2", x(i)); xh.setAttribute("visibility", "visible");
+    const rows = [...chains].sort((a, b) => s.totals[a] - s.totals[b])
+      .map(c => `<div class="row"><span class="sw" style="background:${color(c)}"></span>${meta.chains[c]}<b>${eur(s.totals[c])}</b></div>`).join("");
+    tip.innerHTML = `<div class="muted" style="margin-bottom:4px">${fmtDate(s.d)} · ${s.ids.length} προϊόντα</div>${rows}`;
+    tip.style.display = "block";
+    const px = x(i) * r.width / W;
+    tip.style.left = Math.min(Math.max(px + 12, 0), r.width - tip.offsetWidth) + "px";
+    tip.style.top = "8px";
+  };
+  hit.addEventListener("pointermove", show);
+  hit.addEventListener("pointerleave", () => { tip.style.display = "none"; xh.setAttribute("visibility", "hidden"); });
+}
+</script>
+</body>
+</html>
