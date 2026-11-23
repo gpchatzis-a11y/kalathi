@@ -1,101 +1,2756 @@
 {
- "2026-11-23": {
-  "alevri-allatini-1kg": {
-   "ab": 1.29,
-   "masoutis": 1.7,
-   "mymarket": 1.29
-  },
-  "charti-softex-silk-8": {
-   "masoutis": 4.25,
-   "mymarket": 3.79
-  },
-  "coca-cola-1-5lt": {
-   "ab": 1.96,
-   "masoutis": 1.94,
-   "mymarket": 1.82
-  },
-  "corn-flakes-kelloggs-375g": {
-   "ab": 3.08,
-   "masoutis": 3.85,
-   "mymarket": 3.83
-  },
-  "elaiolado-altis-1lt": {
-   "ab": 7.15,
-   "masoutis": 7.15,
-   "mymarket": 6.95
-  },
-  "fairy-ultra-900ml": {
-   "ab": 2.89,
-   "masoutis": 3.45,
-   "mymarket": 2.68
-  },
-  "feta-dodoni-400g": {
-   "ab": 7.5,
-   "masoutis": 7.5,
-   "mymarket": 7.58
-  },
-  "gala-delta-fresko-1lt": {
-   "ab": 1.77,
-   "masoutis": 1.78,
-   "mymarket": 1.77
-  },
-  "gala-nounou-evapore-400g": {
-   "ab": 1.26,
-   "masoutis": 1.26,
-   "mymarket": 0.88
-  },
-  "giaourti-total-2-1kg": {
-   "ab": 5.35,
-   "masoutis": 5.35,
-   "mymarket": 5.3
-  },
-  "kafes-loumidis-96g": {
-   "ab": 2.54,
-   "masoutis": 2.54,
-   "mymarket": 2.54
-  },
-  "meli-attiki-455g": {
-   "ab": 8.65,
-   "masoutis": 8.24,
-   "mymarket": 8.24
-  },
-  "nero-zagori-6x1-5lt": {
-   "ab": 1.87,
-   "masoutis": 1.87,
-   "mymarket": 1.87
-  },
-  "nescafe-classic-100g": {
-   "masoutis": 5.44,
-   "mymarket": 5.44
-  },
-  "passata-pummaro-500g": {
-   "ab": 0.7,
-   "masoutis": 0.78,
-   "mymarket": 0.7
-  },
-  "psomi-tost-karamolegkos-480g": {
-   "ab": 1.94,
-   "masoutis": 1.94,
-   "mymarket": 1.94
-  },
-  "pti-mper-allatini-225g": {
-   "ab": 1.11,
-   "masoutis": 1.07,
-   "mymarket": 1.03
-  },
-  "rizi-agrino-karolina-500g": {
-   "ab": 2.4,
-   "masoutis": 2.36,
-   "mymarket": 2.55
-  },
-  "spaggeti-melissa-no6-500g": {
-   "ab": 0.72,
-   "masoutis": 0.72,
-   "mymarket": 0.75
-  },
-  "voutyro-lurpak-225g": {
-   "ab": 4.89,
-   "mymarket": 4.71
-  }
- }
+"2026-11-23": {
+"alevri-allatini-1kg": {
+"ab": 1.29,
+"masoutis": 1.7,
+"mymarket": 1.29
+},
+"charti-softex-silk-8": {
+"masoutis": 4.25,
+"mymarket": 3.79
+},
+"coca-cola-1-5lt": {
+"ab": 1.96,
+"masoutis": 1.94,
+"mymarket": 1.82
+},
+"corn-flakes-kelloggs-375g": {
+"ab": 3.08,
+"masoutis": 3.85,
+"mymarket": 3.83
+},
+"elaiolado-altis-1lt": {
+"ab": 7.15,
+"masoutis": 7.15,
+"mymarket": 6.95
+},
+"fairy-ultra-900ml": {
+"ab": 2.89,
+"masoutis": 3.45,
+"mymarket": 2.68
+},
+"feta-dodoni-400g": {
+"ab": 7.5,
+"masoutis": 7.5,
+"mymarket": 7.58
+},
+"gala-delta-fresko-1lt": {
+"ab": 1.77,
+"masoutis": 1.78,
+"mymarket": 1.77
+},
+"gala-nounou-evapore-400g": {
+"ab": 1.26,
+"masoutis": 1.26,
+"mymarket": 0.88
+},
+"giaourti-total-2-1kg": {
+"ab": 5.35,
+"masoutis": 5.35,
+"mymarket": 5.3
+},
+"kafes-loumidis-96g": {
+"ab": 2.54,
+"masoutis": 2.54,
+"mymarket": 2.54
+},
+"meli-attiki-455g": {
+"ab": 8.65,
+"masoutis": 8.24,
+"mymarket": 8.24
+},
+"nero-zagori-6x1-5lt": {
+"ab": 1.87,
+"masoutis": 1.87,
+"mymarket": 1.87
+},
+"nescafe-classic-100g": {
+"masoutis": 5.44,
+"mymarket": 5.44
+},
+"passata-pummaro-500g": {
+"ab": 0.7,
+"masoutis": 0.78,
+"mymarket": 0.7
+},
+"psomi-tost-karamolegkos-480g": {
+"ab": 1.94,
+"masoutis": 1.94,
+"mymarket": 1.94
+},
+"pti-mper-allatini-225g": {
+"ab": 1.11,
+"masoutis": 1.07,
+"mymarket": 1.03
+},
+"rizi-agrino-karolina-500g": {
+"ab": 2.4,
+"masoutis": 2.36,
+"mymarket": 2.55
+},
+"spaggeti-melissa-no6-500g": {
+"ab": 0.72,
+"masoutis": 0.72,
+"mymarket": 0.75
+},
+"voutyro-lurpak-225g": {
+"ab": 4.89,
+"mymarket": 4.71
+}
+},
+"2026-11-24": {
+"12-ouzo-700ml": {
+"masoutis": 9.8,
+"mymarket": 9.8
+},
+"3-alfa-ospriada-500gr": {
+"masoutis": 2.96,
+"mymarket": 2.96
+},
+"3-alfa-ryzi-basmati-1kg": {
+"masoutis": 6.41,
+"mymarket": 6.41
+},
+"3alfa-fakes-kokkines-500gr": {
+"masoutis": 2.35,
+"mymarket": 2.27
+},
+"3alfa-fakoryzo-400gr": {
+"masoutis": 2.29,
+"mymarket": 2.29
+},
+"3alfa-fasolia-chondra-500gr": {
+"masoutis": 4.07,
+"mymarket": 4.08
+},
+"3alfa-fasolia-gigantes-500gr": {
+"masoutis": 4.04,
+"mymarket": 4.34
+},
+"3alfa-fasolia-mavromatika-500gr": {
+"masoutis": 3.1,
+"mymarket": 2.91
+},
+"3alfa-fasolia-metria-500gr": {
+"masoutis": 2.3,
+"mymarket": 1.85
+},
+"3alfa-fasolia-mparmpounia-500gr": {
+"masoutis": 2.64,
+"mymarket": 2.64
+},
+"3alfa-pligouri-metrio-500gr": {
+"masoutis": 1.96,
+"mymarket": 1.96
+},
+"3alfa-ryzi-glasse-500gr": {
+"masoutis": 1.83,
+"mymarket": 1.92
+},
+"3alfa-ryzi-karolina-1kg": {
+"masoutis": 4.14,
+"mymarket": 4.28
+},
+"3alfa-ryzi-kastano-10-500gr": {
+"masoutis": 2.58,
+"mymarket": 2.59
+},
+"7-days-bake-rolls-mini-pizza-150gr-1": {
+"masoutis": 1.65,
+"mymarket": 1.65
+},
+"7-days-bake-rolls-pizza-150gr-1": {
+"masoutis": 1.65,
+"mymarket": 1.65
+},
+"7-up-zero-330ml": {
+"masoutis": 0.83,
+"mymarket": 0.84
+},
+"adoro-per-pasta-krema-galaktos-3x200ml-1": {
+"masoutis": 3.39,
+"mymarket": 3.42
+},
+"adoro-voutyro-germanias-250gr": {
+"masoutis": 2.44,
+"mymarket": 2.36
+},
+"agrino-fakes-psiles-farsalon-500gr": {
+"masoutis": 2.15,
+"mymarket": 2.42
+},
+"agrino-fasolia-gigantes-500gr": {
+"masoutis": 3.75,
+"mymarket": 4.27
+},
+"agrino-quick-deli-tampoule-kinoa-250gr": {
+"masoutis": 1.8,
+"mymarket": 2.4
+},
+"agrino-ryzi-exotic-basmati-indias-500gr": {
+"masoutis": 3.35,
+"mymarket": 3.46
+},
+"agrino-ryzogkofretes-eptaspores-choris-glouteni-100gr": {
+"masoutis": 1.57,
+"mymarket": 1.57
+},
+"agrino-ryzogkofretes-me-mavri-sokolata-choris-glouteni-60gr": {
+"masoutis": 2.07,
+"mymarket": 2.07
+},
+"agrino-ryzogkofretes-me-sokolata-galaktos-choris-glouteni-60": {
+"masoutis": 2.07,
+"mymarket": 2.07
+},
+"agrotyp-fakes-psiles-500gr": {
+"masoutis": 1.1,
+"mymarket": 1.28
+},
+"agrotyp-ryzi-karolina-500gr": {
+"masoutis": 1.13,
+"mymarket": 1.13
+},
+"agrotyp-ryzi-mponet-500gr": {
+"masoutis": 1.04,
+"mymarket": 1.04
+},
+"aim-complete-8-actions-odontokrema-complete-protection-75ml": {
+"masoutis": 1.66,
+"mymarket": 1.61
+},
+"aim-family-protect-white-odontokrema-75ml": {
+"masoutis": 1.31,
+"mymarket": 1.31
+},
+"aim-odontokrema-crystal-gel-75ml": {
+"masoutis": 1.62,
+"mymarket": 1.67
+},
+"aim-odontokrema-white-system-75ml": {
+"masoutis": 1.68,
+"mymarket": 1.71
+},
+"aim-odontokrema-white-system-enamel-75ml": {
+"masoutis": 1.74,
+"mymarket": 1.71
+},
+"airwick-active-fresh-aromatiko-chorou-sprey-fresh-237ml": {
+"masoutis": 5.02,
+"mymarket": 5.03
+},
+"airwick-active-fresh-arromatiko-chorou-cotton-237ml": {
+"masoutis": 5.02,
+"mymarket": 5.03
+},
+"airwick-essential-mist-aposmitiko-chorou-levanta-antallaktik": {
+"masoutis": 5.67,
+"mymarket": 5.63
+},
+"airwick-essential-mist-aposmitiko-chorou-paionia-giasemi-ant": {
+"masoutis": 5.67,
+"mymarket": 5.63
+},
+"ajax-antistatic-katharistiko-tzamion-antallaktiko-750ml": {
+"masoutis": 2.23,
+"mymarket": 2.18
+},
+"ajax-aspros-sifounas-classic-katharistiko-patomatos-1lt": {
+"masoutis": 1.98,
+"mymarket": 1.98
+},
+"ajax-katharistiko-epifaneion-shower-power-antlia-500ml": {
+"masoutis": 1.99,
+"mymarket": 2.19
+},
+"ajax-ygro-katharistiko-kloron-lemoni-1lt": {
+"masoutis": 2.49,
+"mymarket": 2.32
+},
+"alevri-allatini-1kg": {
+"ab": 1.29,
+"masoutis": 1.7,
+"mymarket": 1.29
+},
+"alfa-kichi-mini-me-tyri-800gr": {
+"masoutis": 5.85,
+"mymarket": 5.85
+},
+"alfa-mpira-retro-choris-alkool-fiali-330ml": {
+"masoutis": 1.18,
+"mymarket": 1.18
+},
+"alfa-mpougatsa-thessalonikis-me-krema-800gr": {
+"masoutis": 4.86,
+"mymarket": 3.63
+},
+"alfa-tortigia-polyspores-6tem-370gr": {
+"masoutis": 2.4,
+"mymarket": 2.46
+},
+"algida-cornetto-choco-pagoto-6x60gr-90ml": {
+"masoutis": 8.95,
+"mymarket": 9.1
+},
+"algoflash-fytochoma-10lt": {
+"masoutis": 3.6,
+"mymarket": 3.6
+},
+"allatini-keik-vanilia-375gr": {
+"masoutis": 3.1,
+"mymarket": 4.08
+},
+"allatini-keik-vanilia-me-kakao-375gr": {
+"masoutis": 3.1,
+"mymarket": 3.88
+},
+"allatini-pti-mper-mpiskota-choris-zachari-225gr": {
+"masoutis": 1.47,
+"mymarket": 1.4
+},
+"almito-glykopikantikes-piperies-kerasi-me-krema-tyrion-280gr": {
+"masoutis": 3.38,
+"mymarket": 4.51
+},
+"alpro-rofima-vromis-choris-zachari-1-lt": {
+"masoutis": 2.38,
+"mymarket": 2.19
+},
+"alterra-sef-sto-spiti-agkinares-ala-polita-1kg": {
+"masoutis": 6.72,
+"mymarket": 4.02
+},
+"alterra-sef-sto-spiti-spanakoryzo-1kg": {
+"masoutis": 4.75,
+"mymarket": 2.84
+},
+"alterra-smoothie-pink-paradise-fraoula-rodi-mangko-300gr": {
+"masoutis": 3.82,
+"mymarket": 3.82
+},
+"amaretti-gkofreta-me-krema-kakao-3x68gr": {
+"masoutis": 1.88,
+"mymarket": 1.61
+},
+"amita-froutopoto-rodakino-1lt": {
+"masoutis": 1.96,
+"mymarket": 1.96
+},
+"amvrosia-tyrokafteri-250gr": {
+"masoutis": 2.25,
+"mymarket": 2.25
+},
+"amvrosia-tzatziki-250gr": {
+"masoutis": 1.65,
+"mymarket": 1.65
+},
+"aqua-carpatica-raspberry-anthrakoucho-nero-4x330ml": {
+"masoutis": 3.6,
+"mymarket": 3.6
+},
+"ariasana-syllektis-ygrasias-levanta-450gr-antallaktiko": {
+"masoutis": 3.75,
+"mymarket": 4.06
+},
+"arkadi-baby-sympyknomeno-malaktiko-rouchon-45mez-1lt": {
+"masoutis": 3.48,
+"mymarket": 4.69
+},
+"arkadi-ygro-piaton-pergamonto-greipfrout-antallaktiko-900ml": {
+"masoutis": 4.24,
+"mymarket": 2.76
+},
+"arkadi-ygro-piaton-pergamonto-greipfrout-antlia-550ml": {
+"masoutis": 3.28,
+"mymarket": 2.32
+},
+"arkadi-ygro-piaton-rodi-stafylia-antlia-550ml": {
+"masoutis": 3.28,
+"mymarket": 2.32
+},
+"arla-protein-poutigka-vanilia-cookie-200gr": {
+"masoutis": 1.56,
+"mymarket": 1.98
+},
+"arosis-fakes-chondres-larisas-500gr": {
+"masoutis": 2.93,
+"mymarket": 3.05
+},
+"arosis-fakes-psiles-grevenon-500gr": {
+"masoutis": 2.23,
+"mymarket": 2.54
+},
+"arosis-revithia-apofloiomena-grevenon-500gr": {
+"masoutis": 3.96,
+"mymarket": 4.12
+},
+"arosis-viologika-fasolia-metria-kastorias-500gr": {
+"masoutis": 3.46,
+"mymarket": 4.43
+},
+"arosis-viologika-revithia-grevenon-500gr": {
+"masoutis": 2.73,
+"mymarket": 3.42
+},
+"aroxol-pro-syrigga-gel-gia-myrmigkia-10gr": {
+"masoutis": 11.36,
+"mymarket": 7.76
+},
+"astonish-polykatharistiko-me-soda-750ml": {
+"masoutis": 4.6,
+"mymarket": 4.65
+},
+"ava-perle-chamomili-lemoni-ygro-piaton-430ml": {
+"masoutis": 1.49,
+"mymarket": 1.6
+},
+"ava-perle-ygro-piaton-alati-anthi-neratzias-430ml": {
+"masoutis": 1.49,
+"mymarket": 1.6
+},
+"ava-perle-ygro-piaton-alati-anthi-neratzias-900ml": {
+"masoutis": 1.88,
+"mymarket": 2.38
+},
+"ava-perle-ygro-piaton-prasino-sapouni-masticha-chiou-430ml": {
+"masoutis": 1.49,
+"mymarket": 1.6
+},
+"ava-perle-ygro-piaton-prasino-sapouni-masticha-chiou-900ml": {
+"masoutis": 1.88,
+"mymarket": 2.38
+},
+"ava-perle-ygro-piaton-soda-ekchylisma-lemoniou-900ml": {
+"masoutis": 1.88,
+"mymarket": 2.38
+},
+"ava-ygro-piaton-perle-chamomili-900ml": {
+"masoutis": 1.88,
+"mymarket": 2.38
+},
+"ava-ygro-piaton-perle-chamomili-antlia-650ml": {
+"masoutis": 2.49,
+"mymarket": 2.49
+},
+"ava-ygro-piaton-perle-chamomili-lemoni-900ml": {
+"masoutis": 1.88,
+"mymarket": 2.38
+},
+"avra-fysiko-metalliko-nero-500ml": {
+"masoutis": 0.3,
+"mymarket": 0.36
+},
+"axe-afroloutro-number-10-400ml": {
+"masoutis": 2.39,
+"mymarket": 2.39
+},
+"barilla-collezione-tortiglioni-500gr": {
+"masoutis": 1.74,
+"mymarket": 1.81
+},
+"barilla-pesto-saltsa-basilico-limone-190gr": {
+"masoutis": 3.68,
+"mymarket": 3.7
+},
+"barilla-saltsa-arrabbiata-400gr": {
+"masoutis": 3.06,
+"mymarket": 3.16
+},
+"barilla-saltsa-basilico-200gr": {
+"masoutis": 1.97,
+"mymarket": 2.07
+},
+"barilla-saltsa-pesto-basilico-mozzarella-190gr": {
+"masoutis": 3.68,
+"mymarket": 3.85
+},
+"barilla-saltsa-pesto-rosso-200gr": {
+"masoutis": 3.27,
+"mymarket": 3.48
+},
+"ben-jerrys-pagoto-brookies-cream-388gr-465ml": {
+"masoutis": 8.95,
+"mymarket": 9.06
+},
+"bens-original-saltsa-glykoxini-450gr": {
+"masoutis": 3.38,
+"mymarket": 2.62
+},
+"bens-original-saltsa-glykoxini-choris-zachari-440gr": {
+"masoutis": 3.38,
+"mymarket": 2.62
+},
+"bens-original-saltsa-thai-curry-450gr": {
+"masoutis": 3.38,
+"mymarket": 2.63
+},
+"bio-farma-tomataki-psilokommeno-viologiko-500gr": {
+"masoutis": 1.85,
+"mymarket": 1.9
+},
+"bio-farma-vafles-me-meli-viologikes-175gr": {
+"masoutis": 2.97,
+"mymarket": 2.93
+},
+"bioten-beloved-vanilla-krema-somatos-250ml": {
+"masoutis": 6.5,
+"mymarket": 6.64
+},
+"bioten-hyaluronic-3d-krema-imeras-50ml": {
+"masoutis": 6.3,
+"mymarket": 6.3
+},
+"bioten-krema-imeras-glow-expert-4d-50ml": {
+"masoutis": 10.97,
+"mymarket": 10.97
+},
+"blue-dragon-sos-sogias-150ml": {
+"masoutis": 2.09,
+"mymarket": 2.09
+},
+"blue-dragon-sousamelaio-150ml": {
+"masoutis": 4.83,
+"mymarket": 4.83
+},
+"borotalco-afroloutro-original-600ml": {
+"masoutis": 2.99,
+"mymarket": 2.99
+},
+"brava-moustarda-apali-250gr": {
+"masoutis": 1.68,
+"mymarket": 1.58
+},
+"brava-moustarda-pikantiki-430gr": {
+"masoutis": 2.23,
+"mymarket": 2.5
+},
+"bravo-ellinikos-kafes-klasikos-95gr": {
+"masoutis": 2.55,
+"mymarket": 2.58
+},
+"bravo-kafes-ellinikos-chrysi-epilogi-194gr": {
+"masoutis": 4.99,
+"mymarket": 4.99
+},
+"bref-power-wc-block-active-lemon-duo-2x50gr": {
+"masoutis": 2.67,
+"mymarket": 2.36
+},
+"bref-wc-block-blue-activ-hygiene-50gr": {
+"mymarket": 1.76
+},
+"bref-wc-block-power-activ-thiki-lemon-50gr": {
+"masoutis": 1.8,
+"mymarket": 1.72
+},
+"bref-wc-block-power-active-flower-duo-2x50gr": {
+"masoutis": 2.67,
+"mymarket": 2.36
+},
+"camper-gaz-fialidio-me-valvida-asfaleias-500gr": {
+"masoutis": 3.72,
+"mymarket": 5.14
+},
+"canderel-glykantiko-skoni-40gr": {
+"masoutis": 3.12,
+"mymarket": 3.18
+},
+"catisfaction-snak-gatas-me-catnip-60gr": {
+"masoutis": 2.05,
+"mymarket": 2.07
+},
+"cesar-junior-me-galopoula-vodino-150gr": {
+"masoutis": 1.79,
+"mymarket": 1.74
+},
+"charti-softex-silk-8": {
+"masoutis": 4.25,
+"mymarket": 3.79
+},
+"cheetos-drakoulinia-100gr": {
+"masoutis": 1.54,
+"mymarket": 1.22
+},
+"cheetos-pakotinia-75gr": {
+"masoutis": 0.98,
+"mymarket": 0.98
+},
+"chrysa-avga-aspradi-nopo-pasteriomeno-500ml": {
+"masoutis": 3.72,
+"mymarket": 3.64
+},
+"chryselia-exairetiko-partheno-elaiolado-1-lt": {
+"masoutis": 7.9,
+"mymarket": 9.4
+},
+"chryselia-exairetiko-partheno-elaiolado-3lt": {
+"masoutis": 23.64,
+"mymarket": 27.9
+},
+"chryselia-klasiko-elaiolado-1lt": {
+"masoutis": 6.8,
+"mymarket": 7.32
+},
+"chryselia-klasiko-elaiolado-2lt": {
+"masoutis": 13.46,
+"mymarket": 14.55
+},
+"chrysi-zymi-kourou-loukanopitaki-me-loukaniko-mykonou-800gr": {
+"masoutis": 6.58,
+"mymarket": 6.6
+},
+"chrysi-zymi-mpougatsa-thessalonikis-krema-450gr": {
+"masoutis": 3.1,
+"mymarket": 3.1
+},
+"chrysi-zymi-nistisimi-spitiki-chortopita-850gr": {
+"masoutis": 6.68,
+"mymarket": 6.69
+},
+"coca-cola-1-5lt": {
+"ab": 1.96,
+"masoutis": 1.94,
+"mymarket": 1.82
+},
+"coca-cola-6x150ml": {
+"masoutis": 4.92,
+"mymarket": 4.8
+},
+"coca-cola-light-2x1lt": {
+"masoutis": 3.04,
+"mymarket": 3.0
+},
+"coca-cola-light-4x500ml": {
+"masoutis": 4.72,
+"mymarket": 4.48
+},
+"coca-cola-zero-4x500ml": {
+"masoutis": 4.72,
+"mymarket": 4.72
+},
+"coca-cola-zero-6x150ml": {
+"masoutis": 4.92,
+"mymarket": 4.8
+},
+"coca-cola-zero-lemon-6x330ml": {
+"masoutis": 5.52,
+"mymarket": 5.52
+},
+"colgate-herbal-white-odontokrema-75ml": {
+"masoutis": 1.69,
+"mymarket": 1.78
+},
+"colgate-odontokrema-max-white-coffee-75ml": {
+"masoutis": 2.75,
+"mymarket": 2.75
+},
+"colgate-odontokrema-max-white-ultra-fresh-pearl-75ml": {
+"masoutis": 3.98,
+"mymarket": 3.98
+},
+"colgate-odontokrema-total-active-prevention-original-protect": {
+"masoutis": 1.98,
+"mymarket": 2.06
+},
+"colgate-sensation-white-odontokrema-75ml": {
+"masoutis": 1.75,
+"mymarket": 1.75
+},
+"colgate-sensitive-instant-relief-odontokrema-whitening-75ml": {
+"masoutis": 3.1,
+"mymarket": 3.11
+},
+"colgate-triple-action-stomatiko-dialyma-500ml": {
+"masoutis": 3.48,
+"mymarket": 3.5
+},
+"condito-saltsa-choris-glouteni-napoliten-350gr": {
+"masoutis": 2.16,
+"mymarket": 2.16
+},
+"contrex-nero-fysiko-metalliko-6x1lt": {
+"masoutis": 6.0,
+"mymarket": 6.0
+},
+"cook-at-home-saltsa-garidomakaronada-250gr": {
+"masoutis": 3.45,
+"mymarket": 3.45
+},
+"cook-at-home-saltsa-kotopoulo-lemonato-katsarolas-520gr": {
+"masoutis": 3.65,
+"mymarket": 3.65
+},
+"corn-flakes-kelloggs-375g": {
+"ab": 3.08,
+"masoutis": 3.85,
+"mymarket": 3.83
+},
+"corola-aravositelaio-2lt": {
+"masoutis": 6.12,
+"mymarket": 7.12
+},
+"cover-ygro-gyalistiko-verniki-lefko-75ml": {
+"masoutis": 2.21,
+"mymarket": 2.12
+},
+"craft-lager-mpira-fiali-330ml": {
+"masoutis": 1.87,
+"mymarket": 1.8
+},
+"creta-farms-en-elladi-galopoula-kapnisti-choris-glouteni-fet": {
+"masoutis": 3.7,
+"mymarket": 3.76
+},
+"creta-farms-en-elladi-kotopoulo-psito-choris-glouteni-fetes": {
+"masoutis": 3.22,
+"mymarket": 3.22
+},
+"creta-farms-en-elladi-mpeikon-kapnisto-choris-glouteni-fetes": {
+"masoutis": 2.8,
+"mymarket": 2.8
+},
+"creta-farms-en-elladi-pariza-tost-choris-glouteni-fetes-160g": {
+"masoutis": 1.98,
+"mymarket": 1.97
+},
+"creta-farms-en-elladi-parizaki-choris-glouteni-310gr": {
+"masoutis": 3.39,
+"mymarket": 3.64
+},
+"creta-farms-loukanika-choriatika-me-graviera-kritis-400gr": {
+"masoutis": 6.41,
+"mymarket": 6.36
+},
+"creta-farms-loukanika-choriatika-me-myrodika-400gr": {
+"masoutis": 5.86,
+"mymarket": 5.62
+},
+"creta-farms-tostaki-pariza-fetes-160gr": {
+"masoutis": 1.19,
+"mymarket": 1.5
+},
+"crispy-king-ryzogkofretes-superseeds-choris-glouteni-100gr": {
+"masoutis": 1.42,
+"mymarket": 1.42
+},
+"de-cecco-paccheri-no-125-500gr": {
+"masoutis": 3.62,
+"mymarket": 3.6
+},
+"delta-fytiko-rofima-amygdalo-kakao-1lt": {
+"masoutis": 3.3,
+"mymarket": 3.3
+},
+"delta-mmmmilk-oikogeneiako-gala-35-lipara-1lt": {
+"masoutis": 2.15,
+"mymarket": 2.15
+},
+"delta-rofima-amygdalo-proteini-1-lt": {
+"masoutis": 3.47,
+"mymarket": 3.49
+},
+"delta-smart-100-fysikos-chymos-kerasi-fraoula-200ml": {
+"masoutis": 1.12,
+"mymarket": 1.12
+},
+"delta-smart-100-fysikos-chymos-milo-portokali-200ml": {
+"masoutis": 1.12,
+"mymarket": 1.12
+},
+"delta-smart-epidorpio-giaourtiou-mpanana-3x140gr": {
+"masoutis": 3.18,
+"mymarket": 3.18
+},
+"dettol-apolymantiko-sprei-lemon-400ml": {
+"masoutis": 3.7,
+"mymarket": 3.7
+},
+"dettol-polykatharistiko-24-ores-prostasia-ocean-fresh-460ml": {
+"masoutis": 1.92,
+"mymarket": 1.92
+},
+"dimello-kafes-espresso-mezzo-alesmenos-250gr": {
+"masoutis": 7.19,
+"mymarket": 7.15
+},
+"dimello-kafes-filtrou-bold-500gr": {
+"masoutis": 10.89,
+"mymarket": 10.55
+},
+"dimello-kafes-filtrou-fountoukiou-250gr": {
+"masoutis": 6.73,
+"mymarket": 6.75
+},
+"dimello-kafes-filtrou-karamela-250gr": {
+"masoutis": 6.73,
+"mymarket": 6.75
+},
+"dimitriou-moustalevria-180gr": {
+"masoutis": 1.19,
+"mymarket": 1.19
+},
+"dimitriou-ryzogalo-180gr": {
+"mymarket": 1.19
+},
+"dirollo-cottage-225gr": {
+"masoutis": 3.05,
+"mymarket": 3.06
+},
+"dodoni-feta-pop-almi-1kg-100eur": {
+"masoutis": 15.85,
+"mymarket": 14.84
+},
+"dodoni-tou-tost-light-fetes-200gr": {
+"masoutis": 3.74,
+"mymarket": 3.85
+},
+"dodoni-voutyro-ageladiko-250gr": {
+"masoutis": 3.62,
+"mymarket": 4.54
+},
+"dodoni-voutyro-proveio-250gr-040eur": {
+"masoutis": 4.84,
+"mymarket": 4.29
+},
+"doritos-sweet-chili-180gr": {
+"masoutis": 2.1,
+"mymarket": 2.1
+},
+"doritos-sweet-chili-90gr": {
+"masoutis": 1.18,
+"mymarket": 1.48
+},
+"dove-afroloutro-fresh-care-720ml": {
+"masoutis": 3.17,
+"mymarket": 3.17
+},
+"dove-afroloutro-silky-velvet-720ml": {
+"masoutis": 3.17,
+"mymarket": 3.17
+},
+"dove-kremosapouno-antallaktiko-silk-500ml": {
+"masoutis": 1.84,
+"mymarket": 1.74
+},
+"elaiolado-altis-1lt": {
+"ab": 7.15,
+"masoutis": 7.15,
+"mymarket": 6.95
+},
+"elite-crackers-mesogeiaka-rigani-feta-105gr": {
+"masoutis": 1.68,
+"mymarket": 1.65
+},
+"elite-fryganies-starenies-250gr": {
+"masoutis": 1.45,
+"mymarket": 1.55
+},
+"energas-fialidio-ygraeriou-3x190gr": {
+"masoutis": 3.38,
+"mymarket": 3.41
+},
+"evergreen-organics-kinoa-bio-250gr": {
+"masoutis": 3.38,
+"mymarket": 3.03
+},
+"evrika-baby-apolymantiko-rouchon-1lt": {
+"masoutis": 3.1,
+"mymarket": 3.91
+},
+"evrika-carpet-care-sampouan-katharismou-chalion-500ml": {
+"masoutis": 8.12,
+"mymarket": 7.55
+},
+"evrika-express-ygro-aporrypantiko-gia-plysimo-sto-cheri-900m": {
+"masoutis": 2.62,
+"mymarket": 2.61
+},
+"evrika-ygro-aporrypantiko-rouchon-sensitive-30mez-15lt": {
+"masoutis": 10.44,
+"mymarket": 6.78
+},
+"evrika-ygro-katharismou-gia-xylines-evaisthites-epifaneies-1": {
+"masoutis": 2.79,
+"mymarket": 2.58
+},
+"fa-coconut-milk-afroloutro-750ml": {
+"masoutis": 3.25,
+"mymarket": 3.06
+},
+"fa-pink-passion-roll-on-aposmitiko-50ml": {
+"masoutis": 2.2,
+"mymarket": 2.21
+},
+"fage-ageladitsa-giaourti-agelados-0-lipara-3x200gr": {
+"masoutis": 2.65,
+"mymarket": 2.64
+},
+"fage-gouda-fetes-200gr": {
+"masoutis": 3.67,
+"mymarket": 3.15
+},
+"fage-krema-galaktos-330ml": {
+"masoutis": 4.85,
+"mymarket": 4.82
+},
+"fage-krema-galaktos-light-330ml": {
+"masoutis": 2.6,
+"mymarket": 2.58
+},
+"fage-total-straggisto-giaourti-5-lipara-3x200gr": {
+"masoutis": 3.88,
+"mymarket": 3.86
+},
+"fage-trikalino-fetes-200gr": {
+"masoutis": 4.26,
+"mymarket": 4.25
+},
+"faidon-crispbread-vromis-me-kinoa-charoupi-180gr": {
+"masoutis": 3.12,
+"mymarket": 3.1
+},
+"faidon-koulourakia-me-gefsi-vanilia-300gr": {
+"masoutis": 2.7,
+"mymarket": 2.7
+},
+"faidon-koulourakia-me-krema-kakao-300gr": {
+"masoutis": 3.95,
+"mymarket": 3.96
+},
+"faidon-koulourakia-me-voutyro-300gr": {
+"masoutis": 3.07,
+"mymarket": 3.07
+},
+"faidon-kritsinia-me-charoupi-250gr": {
+"masoutis": 2.53,
+"mymarket": 2.59
+},
+"faidon-pti-four-troufa-350gr": {
+"masoutis": 3.92,
+"mymarket": 4.03
+},
+"faidon-tachinopitaki-50gr": {
+"masoutis": 0.71,
+"mymarket": 0.71
+},
+"fairy-clean-fresh-floral-ygro-piaton-900ml": {
+"masoutis": 3.45,
+"mymarket": 2.68
+},
+"fairy-clean-fresh-me-aroma-milo-ygro-piaton-900ml": {
+"masoutis": 3.45,
+"mymarket": 2.68
+},
+"fairy-ultra-900ml": {
+"ab": 2.89,
+"masoutis": 3.45,
+"mymarket": 2.68
+},
+"fairy-ultra-lemoni-ygro-piaton-900ml": {
+"masoutis": 3.45,
+"mymarket": 2.68
+},
+"famous-grouse-whisky-700ml": {
+"masoutis": 19.0,
+"mymarket": 21.5
+},
+"fanta-portokalada-15lt": {
+"masoutis": 1.65,
+"mymarket": 1.94
+},
+"feta-dodoni-400g": {
+"ab": 7.5,
+"masoutis": 7.5,
+"mymarket": 7.58
+},
+"fever-tree-ginger-ale-200ml": {
+"masoutis": 1.48,
+"mymarket": 1.54
+},
+"fever-tree-pink-grapefruit-soda-200ml": {
+"masoutis": 1.48,
+"mymarket": 1.54
+},
+"finlandia-vodka-700ml": {
+"masoutis": 14.8,
+"mymarket": 15.46
+},
+"flokos-tonos-se-nero-160gr": {
+"masoutis": 2.32,
+"mymarket": 2.35
+},
+"freevia-ygro-glykantiko-stevia-60ml": {
+"masoutis": 2.98,
+"mymarket": 3.49
+},
+"freskoulis-salata-gevma-quinoa-250gr": {
+"masoutis": 3.4,
+"mymarket": 3.35
+},
+"freskoulis-salata-gevma-tuna-250gr": {
+"masoutis": 3.48,
+"mymarket": 3.49
+},
+"friskies-active-xira-trofi-skylon-vodino-4kg": {
+"masoutis": 15.5,
+"mymarket": 11.96
+},
+"frulite-boost-portokali-nektarini-500ml": {
+"masoutis": 1.8,
+"mymarket": 1.8
+},
+"frulite-boost-portokali-verykoko-milo-500ml": {
+"masoutis": 1.8,
+"mymarket": 1.8
+},
+"frulite-froutopoto-mantarini-sagkouini-1lt": {
+"masoutis": 1.95,
+"mymarket": 1.95
+},
+"frulite-froutopoto-mpanana-vyssino-1lt": {
+"masoutis": 1.95,
+"mymarket": 1.95
+},
+"fytro-pityro-vromis-500gr": {
+"masoutis": 3.4,
+"mymarket": 3.59
+},
+"fytro-zachari-mavri-500gr": {
+"masoutis": 2.42,
+"mymarket": 2.42
+},
+"gala-delta-fresko-1lt": {
+"ab": 1.77,
+"masoutis": 1.78,
+"mymarket": 1.77
+},
+"gala-nounou-evapore-400g": {
+"ab": 1.26,
+"masoutis": 1.26,
+"mymarket": 0.88
+},
+"gerber-organic-froutopoures-achladi-mpanana-milo-bio-90gr": {
+"masoutis": 2.43,
+"mymarket": 3.05
+},
+"gerber-organic-mpoukies-dimitriakon-me-tomata-karoto-bio-35g": {
+"masoutis": 2.7,
+"mymarket": 3.39
+},
+"gerber-stiks-kalampokiou-fraoula-mpanana-28gr": {
+"masoutis": 2.62,
+"mymarket": 2.68
+},
+"giaourti-total-2-1kg": {
+"ab": 5.35,
+"masoutis": 5.35,
+"mymarket": 5.3
+},
+"gillette-series-afros-xyrismatos-revitalizing-250ml": {
+"masoutis": 3.29,
+"mymarket": 3.1
+},
+"gillette-series-gel-xyrismatos-cleansing-charcoal-200ml": {
+"masoutis": 3.58,
+"mymarket": 3.39
+},
+"glade-aromatherapy-diffuser-aromatiko-stick-pure-happiness-8": {
+"masoutis": 8.56,
+"mymarket": 9.97
+},
+"glade-aromatherapy-difuser-aromatiko-stick-moment-of-zen-80m": {
+"masoutis": 8.56,
+"mymarket": 9.97
+},
+"go-on-protein-cookies-brownies-50gr": {
+"masoutis": 1.3,
+"mymarket": 1.86
+},
+"gourmet-gold-vodino-kotopoulo-4x85gr": {
+"masoutis": 3.37,
+"mymarket": 3.48
+},
+"granarolo-mozzarella-mini-125gr": {
+"masoutis": 2.42,
+"mymarket": 2.45
+},
+"green-cola-6x330ml": {
+"masoutis": 4.05,
+"mymarket": 4.08
+},
+"green-gkazoza-6x330ml": {
+"masoutis": 4.0,
+"mymarket": 4.02
+},
+"haagen-dazs-pagoto-salted-caramel-400gr-460ml": {
+"masoutis": 8.9,
+"mymarket": 8.85
+},
+"haagen-dazs-pagoto-strawberry-cheesecake-400gr-460ml": {
+"masoutis": 8.9,
+"mymarket": 8.85
+},
+"halls-extra-strong-karamela-32gr": {
+"masoutis": 1.18,
+"mymarket": 1.19
+},
+"hansaplast-krema-anaplasis-podion-100ml": {
+"masoutis": 8.92,
+"mymarket": 8.57
+},
+"haribo-happy-cola-fizz-zeledakia-100gr": {
+"masoutis": 1.3,
+"mymarket": 1.38
+},
+"haribo-miami-fizz-zeledakia-85gr": {
+"masoutis": 1.3,
+"mymarket": 1.38
+},
+"head-shoulders-sampouan-citrus-fresh-625ml": {
+"masoutis": 5.3,
+"mymarket": 5.57
+},
+"head-shoulders-sampouan-coconut-vathia-enydatosi-330ml": {
+"masoutis": 3.47,
+"mymarket": 3.89
+},
+"head-shoulders-sampouan-cool-menthol-625ml": {
+"masoutis": 5.3,
+"mymarket": 5.57
+},
+"healthy-habits-fountoukovoutyro-kakao-chourma-180gr": {
+"masoutis": 3.56,
+"mymarket": 4.04
+},
+"healthy-habits-granola-fountoukovoutyro-mavri-sokolata-350gr": {
+"masoutis": 4.48,
+"mymarket": 4.49
+},
+"healthy-habits-granola-fystikokovoutyro-mavri-sokolata-350gr": {
+"masoutis": 4.48,
+"mymarket": 4.49
+},
+"healthy-habits-tachini-aplo-280gr": {
+"masoutis": 3.98,
+"mymarket": 4.0
+},
+"healthy-habits-tachini-me-meli-280gr": {
+"masoutis": 4.38,
+"mymarket": 4.4
+},
+"heinz-ketsap-top-down-250gr": {
+"masoutis": 2.12,
+"mymarket": 1.91
+},
+"hell-energy-drink-black-cherry-250ml": {
+"masoutis": 0.7,
+"mymarket": 0.82
+},
+"hell-energy-drink-peach-lemon-500ml": {
+"masoutis": 1.38,
+"mymarket": 1.11
+},
+"hell-energy-drink-zero-white-peach-250ml": {
+"masoutis": 0.7,
+"mymarket": 0.82
+},
+"hell-ice-coffee-cappuccino-250ml": {
+"masoutis": 1.2,
+"mymarket": 1.2
+},
+"hell-ice-coffee-latte-250ml": {
+"masoutis": 1.2,
+"mymarket": 1.2
+},
+"hell-ice-coffee-salted-caramel-250ml": {
+"masoutis": 1.2,
+"mymarket": 1.2
+},
+"hellmanns-moustarda-apali-250gr": {
+"masoutis": 2.74,
+"mymarket": 2.06
+},
+"hellmanns-moustarda-apali-500gr": {
+"masoutis": 4.45,
+"mymarket": 3.34
+},
+"hellmanns-moustarda-pikantiki-250gr": {
+"masoutis": 2.74,
+"mymarket": 2.06
+},
+"hellmanns-moustarda-pikantiki-500gr": {
+"masoutis": 4.45,
+"mymarket": 3.34
+},
+"hellmanns-saltsa-kotopoulou-250ml": {
+"masoutis": 2.99,
+"mymarket": 2.99
+},
+"herbal-essences-sampouan-rose-350ml": {
+"masoutis": 3.12,
+"mymarket": 2.89
+},
+"hungry-not-epikalymmeno-fistiki-me-gefsi-tyri-mpeikon-80gr": {
+"masoutis": 1.02,
+"mymarket": 0.99
+},
+"hungry-not-granola-mavri-sokolata-375gr": {
+"masoutis": 2.87,
+"mymarket": 4.12
+},
+"hungry-not-granola-sokolata-galaktos-375gr": {
+"masoutis": 2.87,
+"mymarket": 4.12
+},
+"illy-kafes-espresso-alesmenos-decafeine-250gr": {
+"masoutis": 11.85,
+"mymarket": 10.74
+},
+"ion-break-sokolata-me-fountouki-85gr": {
+"masoutis": 1.63,
+"mymarket": 1.92
+},
+"ion-kouvertoura-galaktos-125gr": {
+"masoutis": 2.8,
+"mymarket": 2.9
+},
+"ion-kouvertoura-ygeias-2x125gr": {
+"masoutis": 5.15,
+"mymarket": 5.1
+},
+"ion-sokofreta-ygeias-stevia-38gr": {
+"masoutis": 0.51,
+"mymarket": 0.66
+},
+"ion-sokolata-amygdalou-70gr": {
+"masoutis": 1.94,
+"mymarket": 1.55
+},
+"ion-sokolata-fountoukiou-100gr": {
+"masoutis": 2.48,
+"mymarket": 2.5
+},
+"ion-sokolata-galaktos-3x100gr": {
+"masoutis": 5.71,
+"mymarket": 5.71
+},
+"ion-sokolata-galaktos-3x70gr": {
+"masoutis": 4.35,
+"mymarket": 4.64
+},
+"ion-sokolata-galaktos-70gr": {
+"masoutis": 1.56,
+"mymarket": 1.6
+},
+"ionis-elaiolado-klasiko-4-lt": {
+"masoutis": 24.58,
+"mymarket": 24.71
+},
+"ionis-klasiko-elaiolado-1-lt": {
+"masoutis": 5.95,
+"mymarket": 6.14
+},
+"ivi-lemonita-6x330ml": {
+"masoutis": 3.5,
+"mymarket": 4.74
+},
+"ivi-soda-6x330ml": {
+"masoutis": 2.7,
+"mymarket": 3.6
+},
+"jacobs-eklektos-kafes-filtrou-100gr": {
+"masoutis": 2.99,
+"mymarket": 2.98
+},
+"jacobs-gold-stigmiaios-kafes-200gr": {
+"masoutis": 12.57,
+"mymarket": 12.59
+},
+"jacobs-kafes-filtrou-eklektos-250gr": {
+"masoutis": 7.37,
+"mymarket": 7.35
+},
+"jacobs-kafes-filtrou-karamelomeno-amygdalo-250gr": {
+"masoutis": 8.65,
+"mymarket": 8.72
+},
+"jacobs-kafes-filtrou-vanilia-250gr": {
+"masoutis": 8.65,
+"mymarket": 8.67
+},
+"jacobs-stigmiaios-kafes-gold-95gr": {
+"masoutis": 6.28,
+"mymarket": 6.28
+},
+"jameson-black-barrel-ouisky-700ml": {
+"masoutis": 34.85,
+"mymarket": 34.85
+},
+"johnnie-walker-red-label-whisky-700ml": {
+"masoutis": 18.3,
+"mymarket": 18.79
+},
+"johnsons-baby-conditioner-500ml": {
+"masoutis": 3.02,
+"mymarket": 2.78
+},
+"johnsons-baby-poudra-aloe-vitamin-e-100gr": {
+"masoutis": 2.48,
+"mymarket": 1.98
+},
+"johnsons-baby-shampoo-chamomili-antlia-750ml": {
+"masoutis": 2.92,
+"mymarket": 2.68
+},
+"johnsons-kids-conditioner-shiny-drops-500ml": {
+"masoutis": 3.02,
+"mymarket": 3.0
+},
+"johnsons-kids-conditioner-spray-shiny-drops-200ml": {
+"masoutis": 2.69,
+"mymarket": 2.69
+},
+"kafes-loumidis-96g": {
+"ab": 2.54,
+"masoutis": 2.54,
+"mymarket": 2.54
+},
+"kalaitzi-tsipouro-choris-glykaniso-700ml": {
+"masoutis": 12.3,
+"mymarket": 12.33
+},
+"kalas-alati-chryso-500gr": {
+"masoutis": 2.46,
+"mymarket": 2.46
+},
+"kanaki-fyllo-kroustas-450gr": {
+"masoutis": 3.9,
+"mymarket": 3.9
+},
+"kanaki-tyropitakia-kourou-800gr": {
+"masoutis": 4.3,
+"mymarket": 2.59
+},
+"karamolegkos-psomakia-santouits-480gr-6tem": {
+"masoutis": 2.33,
+"mymarket": 2.35
+},
+"katselis-diplozymoto-psomi-se-fetes-choriatiko-500gr": {
+"masoutis": 1.6,
+"mymarket": 1.6
+},
+"kelloggs-coco-pops-dimitriaka-330gr": {
+"masoutis": 3.12,
+"mymarket": 3.68
+},
+"kelloggs-dimitriaka-corn-flakes-500gr": {
+"masoutis": 4.93,
+"mymarket": 4.92
+},
+"kliafa-portokalada-15-lt": {
+"masoutis": 1.8,
+"mymarket": 1.81
+},
+"klinex-chlorini-advance-2lt": {
+"masoutis": 3.75,
+"mymarket": 3.78
+},
+"klinex-katharistiko-patomatos-pure-hygiene-herbal-1lt": {
+"masoutis": 1.98,
+"mymarket": 1.82
+},
+"klinex-pure-hygiene-katharistiko-patomatos-powder-1lt": {
+"masoutis": 1.98,
+"mymarket": 1.82
+},
+"klinex-ultra-chlorini-fresh-2x750ml-giga-pack": {
+"masoutis": 3.34,
+"mymarket": 3.34
+},
+"klinex-ultra-chlorini-lemon-2x750ml-giga-pack": {
+"masoutis": 3.34,
+"mymarket": 3.34
+},
+"klinex-ultra-chlorini-regular-2x750ml-giga-pack": {
+"masoutis": 3.34,
+"mymarket": 3.34
+},
+"knorr-kotosoupa-me-fide-69gr": {
+"masoutis": 2.45,
+"mymarket": 2.45
+},
+"kolios-kefalotyri-trimmeno-200gr": {
+"masoutis": 4.39,
+"mymarket": 3.84
+},
+"kolios-paradosiako-high-protein-elafry-se-fetes-180gr": {
+"masoutis": 2.78,
+"mymarket": 3.48
+},
+"kolios-polykastrou-tyri-imiskliro-370gr": {
+"masoutis": 5.74,
+"mymarket": 6.05
+},
+"kolios-to-paradosiako-tyri-imiskliro-370gr": {
+"masoutis": 5.95,
+"mymarket": 5.39
+},
+"kri-kri-babies-grow-epidorpio-mpanana-milo-2x140gr": {
+"masoutis": 2.05,
+"mymarket": 2.12
+},
+"kri-kri-epidorpio-giaourtiou-rodakino-3x180gr": {
+"masoutis": 3.15,
+"mymarket": 2.68
+},
+"kri-kri-frozen-yogurt-hazelnat-pagoto-320gr-450ml": {
+"masoutis": 6.85,
+"mymarket": 6.87
+},
+"kri-kri-giaourti-straggisto-2-lipara-1kg": {
+"masoutis": 4.75,
+"mymarket": 4.75
+},
+"kri-kri-grow-epidorpio-giaourtiou-milo-karoto-2x140gr": {
+"masoutis": 2.15,
+"mymarket": 2.12
+},
+"kri-kri-spitiko-epidorpio-giaourtiou-2-lipara-1kg": {
+"masoutis": 3.28,
+"mymarket": 3.28
+},
+"kris-kris-fetes-zois-polysporo-me-prozymi-500gr": {
+"masoutis": 2.08,
+"mymarket": 2.09
+},
+"kyknos-tomatopoltos-diplis-sympyknosis-28-30-200gr": {
+"masoutis": 1.23,
+"mymarket": 1.48
+},
+"la-vache-qui-rit-light-tyrovouties-140gr": {
+"masoutis": 2.28,
+"mymarket": 2.87
+},
+"lacta-sokolata-me-olokliro-fountouki-100gr": {
+"masoutis": 1.67,
+"mymarket": 1.67
+},
+"lacta-sokolata-olokliro-amygdalo-100gr": {
+"masoutis": 1.67,
+"mymarket": 1.67
+},
+"lavdas-pic-nic-karameles-250gr": {
+"masoutis": 1.98,
+"mymarket": 1.98
+},
+"lenor-beads-gold-orchid-enischymeno-aroma-270gr": {
+"masoutis": 6.21,
+"mymarket": 5.95
+},
+"lenor-beads-spring-awake-enischytiko-aromatos-rouchon-270gr": {
+"masoutis": 6.21,
+"mymarket": 5.95
+},
+"li-o-chang-saltsa-sogias-250ml": {
+"masoutis": 3.08,
+"mymarket": 2.65
+},
+"lipton-ice-tea-rodakino-fakelaki-125gr": {
+"masoutis": 1.8,
+"mymarket": 1.8
+},
+"listerine-total-care-stomatiko-dialyma-250ml": {
+"masoutis": 3.27,
+"mymarket": 2.74
+},
+"loreal-men-expert-shirt-protect-aposmitiko-roll-on-50ml": {
+"masoutis": 2.77,
+"mymarket": 5.53
+},
+"loumidis-papagalos-ellinikos-kafes-skouros-194gr": {
+"masoutis": 4.62,
+"mymarket": 4.77
+},
+"loumidis-papagalos-kafes-ellinikos-decaf-143gr": {
+"masoutis": 3.55,
+"mymarket": 3.83
+},
+"loumidis-papagalos-kafes-ellinikos-koupatos-290gr": {
+"masoutis": 6.72,
+"mymarket": 6.69
+},
+"loumidis-papagalos-kafes-ellinikos-paradosiakos-194gr": {
+"masoutis": 4.76,
+"mymarket": 4.76
+},
+"loux-portokalada-mple-6x330ml": {
+"masoutis": 3.57,
+"mymarket": 3.24
+},
+"loux-soda-6x330ml": {
+"masoutis": 2.69,
+"mymarket": 2.43
+},
+"loux-vyssinada-6x330ml": {
+"masoutis": 4.38,
+"mymarket": 3.83
+},
+"lucozade-portokali-500ml": {
+"masoutis": 1.54,
+"mymarket": 1.55
+},
+"lurpak-soft-analato-500gr": {
+"masoutis": 7.96,
+"mymarket": 7.93
+},
+"lurpak-voutyro-light-analato-200gr": {
+"masoutis": 2.24,
+"mymarket": 2.97
+},
+"lux-afroloutro-charming-peony-600ml": {
+"masoutis": 2.9,
+"mymarket": 2.9
+},
+"lux-afroloutro-soft-rose-600ml": {
+"masoutis": 2.9,
+"mymarket": 2.9
+},
+"lux-afroloutro-sweet-dahlia-600ml": {
+"masoutis": 2.9,
+"mymarket": 2.92
+},
+"lux-kremosapouno-magical-orchid-antallaktiko-750ml": {
+"masoutis": 2.54,
+"mymarket": 2.39
+},
+"lux-kremosapouno-secret-poppy-antallaktiko-750ml": {
+"masoutis": 2.54,
+"mymarket": 2.39
+},
+"maggi-noodles-saucy-cup-teriyaki-75gr": {
+"masoutis": 1.8,
+"mymarket": 1.44
+},
+"makedonikos-chalvas-espresso-40gr": {
+"masoutis": 0.75,
+"mymarket": 0.71
+},
+"makvel-lazanaki-500gr": {
+"masoutis": 1.18,
+"mymarket": 1.16
+},
+"malamatina-retsina-500ml": {
+"masoutis": 2.98,
+"mymarket": 2.24
+},
+"martini-bianco-1lt": {
+"masoutis": 11.1,
+"mymarket": 12.15
+},
+"matarelli-ouzo-200ml": {
+"masoutis": 4.7,
+"mymarket": 4.66
+},
+"maxwell-house-kafes-filtrou-fountouki-225gr": {
+"masoutis": 5.98,
+"mymarket": 6.12
+},
+"medix-expert-katharistiko-fournou-active-foam-500ml": {
+"masoutis": 2.84,
+"mymarket": 3.03
+},
+"medix-multi-action-lipokatharistiko-lemoni-750ml": {
+"masoutis": 2.99,
+"mymarket": 2.99
+},
+"mega-kremosapouno-levanta-antallaktiko-500ml": {
+"masoutis": 3.18,
+"mymarket": 1.75
+},
+"mega-vamvaki-100gr": {
+"masoutis": 1.4,
+"mymarket": 1.35
+},
+"meli-attiki-455g": {
+"ab": 8.65,
+"masoutis": 8.24,
+"mymarket": 8.24
+},
+"melissa-chrysi-epilogi-pennes-rige-500gr-1": {
+"masoutis": 1.35,
+"mymarket": 1.25
+},
+"melissa-chrysi-epilogi-plexoudes-500gr": {
+"masoutis": 1.35,
+"mymarket": 1.25
+},
+"melissa-fides-psilos-250gr": {
+"masoutis": 1.0,
+"mymarket": 0.9
+},
+"melissa-kanelonia-250gr": {
+"masoutis": 1.39,
+"mymarket": 1.28
+},
+"melissa-koralli-500gr": {
+"masoutis": 1.12,
+"mymarket": 1.09
+},
+"melissa-kritharaki-metrio-1kg": {
+"masoutis": 1.98,
+"mymarket": 1.49
+},
+"melissa-kritharaki-metrio-500gr": {
+"masoutis": 0.99,
+"mymarket": 0.83
+},
+"melissa-lazanaki-500gr": {
+"masoutis": 1.09,
+"mymarket": 1.07
+},
+"melissa-makaronia-no-5-500gr": {
+"masoutis": 1.16,
+"mymarket": 1.09
+},
+"melissa-pasta-kids-peppa-pig-400gr": {
+"masoutis": 1.48,
+"mymarket": 1.12
+},
+"melissa-pennes-rige-500gr": {
+"masoutis": 1.12,
+"mymarket": 1.0
+},
+"melissa-rigkatoni-500gr": {
+"masoutis": 1.1,
+"mymarket": 1.09
+},
+"melissa-simigdali-chondro-500gr": {
+"masoutis": 0.95,
+"mymarket": 0.92
+},
+"melissa-spaggeti-me-karoto-400gr": {
+"masoutis": 1.33,
+"mymarket": 1.3
+},
+"melissa-spaggeti-me-spanaki-400gr": {
+"masoutis": 1.33,
+"mymarket": 1.31
+},
+"melissa-strifto-500gr": {
+"masoutis": 1.14,
+"mymarket": 1.0
+},
+"melissa-striftoni-me-tomata-400gr": {
+"masoutis": 1.36,
+"mymarket": 1.3
+},
+"melissa-tortelini-me-5-tyria-500gr": {
+"masoutis": 3.98,
+"mymarket": 3.72
+},
+"melissa-tortellini-me-5-tyria-250gr": {
+"masoutis": 2.22,
+"mymarket": 2.01
+},
+"melissa-tortellini-me-feta-250gr": {
+"masoutis": 2.25,
+"mymarket": 2.1
+},
+"mevgal-anthotyro-300gr": {
+"masoutis": 2.9,
+"mymarket": 2.98
+},
+"mevgal-gala-fresko-elafry-15-lipara-1lt": {
+"masoutis": 1.28,
+"mymarket": 1.45
+},
+"mevgal-giaourti-katsikisio-paradosiako-200gr": {
+"masoutis": 1.32,
+"mymarket": 1.6
+},
+"mevgal-giaourti-proveio-paradosiako-200gr": {
+"masoutis": 1.4,
+"mymarket": 1.68
+},
+"mevgal-high-protein-epidorpio-fraoulas-170gr": {
+"masoutis": 1.36,
+"mymarket": 1.37
+},
+"mevgal-high-protein-poutigka-alatismeni-karamela-200gr": {
+"masoutis": 1.95,
+"mymarket": 1.95
+},
+"mevgal-high-protein-poutigka-kakao-200gr": {
+"masoutis": 1.95,
+"mymarket": 1.95
+},
+"mevgal-high-protein-poutigka-vanilia-200gr": {
+"masoutis": 1.95,
+"mymarket": 1.95
+},
+"mevgal-kefir-katsikisio-200ml": {
+"masoutis": 1.3,
+"mymarket": 1.3
+},
+"minerva-aravositelaio-2lt": {
+"masoutis": 6.79,
+"mymarket": 6.78
+},
+"minerva-elaiolado-klassiko-1lt": {
+"masoutis": 6.9,
+"mymarket": 6.6
+},
+"minerva-elaiolado-klassiko-4lt": {
+"masoutis": 27.6,
+"mymarket": 20.4
+},
+"minerva-ilielaio-2lt": {
+"masoutis": 6.39,
+"mymarket": 6.39
+},
+"misko-astraki-500gr": {
+"masoutis": 1.57,
+"mymarket": 1.57
+},
+"misko-kritharaki-chondro-500gr": {
+"masoutis": 1.48,
+"mymarket": 1.38
+},
+"misko-kritharaki-chrysi-seira-500gr": {
+"masoutis": 1.84,
+"mymarket": 1.84
+},
+"misko-kritharaki-metrio-500gr": {
+"masoutis": 1.48,
+"mymarket": 1.38
+},
+"misko-ligkouini-lazania-500gr": {
+"masoutis": 1.57,
+"mymarket": 1.57
+},
+"misko-makaronia-extrafino-no-12-500gr": {
+"masoutis": 1.82,
+"mymarket": 1.75
+},
+"misko-penne-rigkate-trikolore-500gr": {
+"masoutis": 2.48,
+"mymarket": 2.78
+},
+"misko-rigkatoni-500gr": {
+"masoutis": 1.57,
+"mymarket": 1.57
+},
+"misko-ryzaki-500gr": {
+"masoutis": 1.57,
+"mymarket": 1.57
+},
+"misko-saltsa-vasilikos-krasi-500gr": {
+"masoutis": 1.5,
+"mymarket": 1.61
+},
+"misko-taliateles-500gr": {
+"masoutis": 2.55,
+"mymarket": 2.53
+},
+"moet-chandon-rose-sampania-750ml": {
+"masoutis": 71.3,
+"mymarket": 71.3
+},
+"molto-krouasan-kerasi-98gr": {
+"masoutis": 1.01,
+"mymarket": 0.99
+},
+"molto-krouasan-pralina-fountouki-3x98gr": {
+"masoutis": 2.79,
+"mymarket": 2.79
+},
+"mpampatzim-tsipouro-choris-glykaniso-700ml": {
+"masoutis": 14.85,
+"mymarket": 14.89
+},
+"mparmpa-stathis-arakas-viologiki-kalliergia-450gr": {
+"masoutis": 2.98,
+"mymarket": 4.14
+},
+"mparmpa-stathis-as-mageirepsoume-arakas-laderos-1kg": {
+"masoutis": 5.8,
+"mymarket": 5.8
+},
+"mparmpa-stathis-as-mageirepsoume-fasolakia-ladera-chantres-1": {
+"masoutis": 6.68,
+"mymarket": 6.68
+},
+"mparmpa-stathis-as-mageirepsoume-fasolakia-platia-giachni-1k": {
+"masoutis": 6.62,
+"mymarket": 6.65
+},
+"mparmpa-stathis-as-mageirepsoume-fasolakia-stroggyla-ladera": {
+"masoutis": 5.58,
+"mymarket": 5.59
+},
+"mparmpa-stathis-fasolakia-platia-1kg": {
+"masoutis": 4.26,
+"mymarket": 4.27
+},
+"mparmpa-stathis-fasolakia-stroggyla-1kg": {
+"masoutis": 4.08,
+"mymarket": 4.08
+},
+"mparmpa-stathis-lachanakia-vryxellon-450gr": {
+"masoutis": 3.2,
+"mymarket": 3.22
+},
+"mparmpa-stathis-manitaria-fetes-450gr": {
+"masoutis": 4.2,
+"mymarket": 4.2
+},
+"mparmpa-stathis-mprokolo-750gr": {
+"masoutis": 4.18,
+"mymarket": 4.29
+},
+"mparmpa-stathis-ryzi-me-kalampoki-600gr": {
+"masoutis": 3.96,
+"mymarket": 3.84
+},
+"mparmpa-stathis-ryzi-me-manitaria-600gr": {
+"masoutis": 3.96,
+"mymarket": 3.98
+},
+"mparmpa-stathis-salata-kalampokiou-450gr": {
+"masoutis": 3.8,
+"mymarket": 3.98
+},
+"mparmpa-stathis-salata-mexicana-450gr": {
+"masoutis": 3.4,
+"mymarket": 3.56
+},
+"myloi-agiou-georgiou-alevri-choris-glouteni-oles-tis-chrisei": {
+"masoutis": 4.54,
+"mymarket": 3.84
+},
+"myloi-agiou-georgiou-aleyri-kalampokiou-500gr": {
+"masoutis": 1.08,
+"mymarket": 1.1
+},
+"myloi-agiou-georgiou-korn-flaour-200gr": {
+"masoutis": 0.98,
+"mymarket": 0.98
+},
+"myloi-agiou-georgiou-simigdali-no3-psilo-500gr": {
+"masoutis": 1.2,
+"mymarket": 1.2
+},
+"nea-fytini-paradosiaki-400gr": {
+"masoutis": 4.1,
+"mymarket": 4.1
+},
+"nero-zagori-6x1-5lt": {
+"ab": 1.87,
+"masoutis": 1.87,
+"mymarket": 1.87
+},
+"nescafe-classic-100g": {
+"masoutis": 5.44,
+"mymarket": 5.44
+},
+"nescafe-classic-stigmiaios-kafes-50gr": {
+"masoutis": 2.95,
+"mymarket": 2.95
+},
+"nescafe-gold-stigmiaios-kafes-190gr": {
+"masoutis": 12.47,
+"mymarket": 12.49
+},
+"nescafe-gold-stigmiaios-kafes-organic-95gr": {
+"masoutis": 7.32,
+"mymarket": 7.62
+},
+"nestle-farin-lakte-300gr": {
+"masoutis": 3.88,
+"mymarket": 3.99
+},
+"nestle-vrefiko-gala-skoni-nan-optipro-4-800gr": {
+"masoutis": 22.4,
+"mymarket": 20.77
+},
+"nestle-vrefiko-gala-skoni-nan-optipro-5-400gr": {
+"masoutis": 11.8,
+"mymarket": 9.94
+},
+"neutro-roberts-aposmitiko-roll-on-powder-fresh-50ml": {
+"masoutis": 2.9,
+"mymarket": 2.9
+},
+"nikas-fuego-galopoula-kapnisti-choris-glouteni-120gr": {
+"masoutis": 3.39
+},
+"nikas-parizaki-choris-glouteni-300gr": {
+"masoutis": 2.8,
+"mymarket": 2.84
+},
+"nirvana-pagoto-rasberry-truffle-313gr-420ml": {
+"masoutis": 8.78,
+"mymarket": 8.83
+},
+"nisos-7-mpofor-mpira-fiali-330ml": {
+"masoutis": 2.74,
+"mymarket": 3.11
+},
+"nivea-antirytidiki-krema-imeras-anazoogonisi-55-50ml": {
+"masoutis": 5.83,
+"mymarket": 5.84
+},
+"nivea-enydatiki-krema-imeras-spf15-50ml": {
+"masoutis": 4.22,
+"mymarket": 4.29
+},
+"nivea-men-deep-afros-xyrismatos-200ml": {
+"masoutis": 4.5,
+"mymarket": 4.5
+},
+"nivea-men-krema-real-madrid-limited-edition-150ml": {
+"masoutis": 6.47,
+"mymarket": 3.88
+},
+"nounou-evapore-gala-light-170gr": {
+"masoutis": 0.82,
+"mymarket": 0.66
+},
+"nounou-family-gala-0-lipara-1lt": {
+"masoutis": 1.98,
+"mymarket": 1.98
+},
+"nounou-gala-family-15-lipara-15lt": {
+"masoutis": 2.95,
+"mymarket": 2.95
+},
+"nounou-gala-zacharoucho-397gr": {
+"masoutis": 2.05,
+"mymarket": 1.68
+},
+"nounou-gouda-fetes-340gr": {
+"masoutis": 4.68,
+"mymarket": 4.68
+},
+"nounou-gouda-se-fetes-200gr": {
+"masoutis": 2.94,
+"mymarket": 2.94
+},
+"nounou-protein-cheese-se-fetes-180gr": {
+"masoutis": 2.98,
+"mymarket": 2.98
+},
+"nounou-sympyknomeno-gala-light-400gr": {
+"masoutis": 1.26,
+"mymarket": 0.88
+},
+"noxzema-afroloutro-talc-600ml": {
+"masoutis": 1.91,
+"mymarket": 1.93
+},
+"noxzema-mineral-hyalucare-afroloutro-750ml": {
+"masoutis": 2.95,
+"mymarket": 2.96
+},
+"noynoy-sympyknomeno-gala-4x170gr": {
+"masoutis": 2.79,
+"mymarket": 2.62
+},
+"noynoy-sympyknomeno-gala-light-4x170gr": {
+"masoutis": 2.79,
+"mymarket": 2.62
+},
+"nucrema-pralina-8-fountouki-kakao-580gr": {
+"masoutis": 4.47,
+"mymarket": 4.47
+},
+"nuii-pagoto-mini-salted-caramel-nordic-berry-6x55ml-253gr": {
+"masoutis": 10.75,
+"mymarket": 10.78
+},
+"nutri-valley-chiquita-froutopoto-milo-portokali-verikoko-1lt": {
+"masoutis": 1.42,
+"mymarket": 1.25
+},
+"nutri-valley-chiquita-froutopoto-vyssino-1lt": {
+"masoutis": 1.58,
+"mymarket": 1.4
+},
+"nutri-valley-corn-flakes-375gr": {
+"masoutis": 2.2,
+"mymarket": 1.87
+},
+"nutri-valley-dimitriaka-peppa-pig-choco-balls-375gr": {
+"masoutis": 2.64,
+"mymarket": 2.46
+},
+"nutri-valley-gkofretes-revithiou-choris-glouteni-135gr": {
+"masoutis": 2.09,
+"mymarket": 2.06
+},
+"nutri-valley-granola-cranberries-choris-glouteni-320gr": {
+"masoutis": 2.84,
+"mymarket": 2.98
+},
+"nutri-valley-granola-vanilla-choco-450gr": {
+"masoutis": 3.22,
+"mymarket": 3.18
+},
+"oikogeneia-stergiou-keik-anamikto-400gr": {
+"masoutis": 3.73,
+"mymarket": 3.75
+},
+"oikogeneia-stergiou-pancakes-klassika-280gr": {
+"masoutis": 3.45,
+"mymarket": 3.62
+},
+"oikogeneia-stergiou-stafidopsomo-290gr": {
+"masoutis": 2.38,
+"mymarket": 2.39
+},
+"oikogeneia-stergiou-tsourekaki-masticha-chiou-300gr": {
+"masoutis": 2.55,
+"mymarket": 2.56
+},
+"oikogeneia-stergiou-tsoureki-masticha-chiou-90gr": {
+"masoutis": 1.0,
+"mymarket": 0.99
+},
+"old-spice-rockstar-aposmitiko-somatos-sprei-150ml": {
+"masoutis": 3.24,
+"mymarket": 2.99
+},
+"olympos-feta-pop-varelisia-300gr": {
+"masoutis": 5.98,
+"mymarket": 6.14
+},
+"olympos-fysikos-chymos-9-frouta-15lt": {
+"masoutis": 3.2,
+"mymarket": 3.22
+},
+"olympos-fysikos-chymos-milo-portokali-karoto-15lt": {
+"masoutis": 3.2,
+"mymarket": 3.2
+},
+"olympos-fysikos-chymos-milo-portokali-karoto-1lt": {
+"masoutis": 2.42,
+"mymarket": 3.23
+},
+"olympos-fysikos-chymos-milo-portokali-karoto-250ml": {
+"masoutis": 0.93,
+"mymarket": 1.24
+},
+"olympos-fysikos-chymos-portokali-15lt": {
+"masoutis": 3.38,
+"mymarket": 3.38
+},
+"olympos-fysikos-chymos-portokali-1lt": {
+"masoutis": 2.54,
+"mymarket": 3.38
+},
+"olympos-fysikos-chymos-portokali-250ml": {
+"masoutis": 0.99,
+"mymarket": 1.35
+},
+"olympos-fysikos-chymos-portokali-500ml": {
+"masoutis": 1.49,
+"mymarket": 1.97
+},
+"olympos-fysikos-chymos-portokali-apo-spiti-1lt": {
+"masoutis": 2.85,
+"mymarket": 3.8
+},
+"olympos-gala-fresko-epilegmeno-37-lipara-1lt": {
+"masoutis": 1.74,
+"mymarket": 1.74
+},
+"olympos-gala-fresko-epilegmeno-37lipara-15lt": {
+"masoutis": 2.54,
+"mymarket": 2.54
+},
+"olympos-gala-katsikisio-elafry-17-lipara-1lt": {
+"masoutis": 2.95,
+"mymarket": 2.95
+},
+"olympos-gala-katsikisio-viologiko-17-lipara-1lt": {
+"masoutis": 3.38,
+"mymarket": 3.44
+},
+"olympos-giaourti-straggisto-2-lipara-3x200gr": {
+"masoutis": 3.98,
+"mymarket": 3.99
+},
+"olympos-giaourti-straggisto-5-lipara-1kg": {
+"masoutis": 4.95,
+"mymarket": 4.95
+},
+"olympos-karpos-rofima-vromi-1lt": {
+"masoutis": 3.0,
+"mymarket": 3.01
+},
+"olympos-karpos-rofima-vromi-fountouki-1-lt": {
+"masoutis": 3.1,
+"mymarket": 3.1
+},
+"olympos-kefalotyri-proveio-trimmeno-150gr": {
+"masoutis": 3.68,
+"mymarket": 3.7
+},
+"olympos-prasino-tsai-zero-lemoni-500ml": {
+"masoutis": 1.13,
+"mymarket": 1.51
+},
+"omino-bianco-afros-katharistiko-chalion-300ml": {
+"masoutis": 6.95,
+"mymarket": 6.95
+},
+"oral-b-123-odontokrema-75ml": {
+"masoutis": 1.26,
+"mymarket": 1.3
+},
+"oral-b-kids-spider-odontokrema-6-minon-60ml": {
+"masoutis": 2.14,
+"mymarket": 1.99
+},
+"oreines-plagies-katiki-domokou-tyri-pop-200gr": {
+"masoutis": 2.62,
+"mymarket": 2.6
+},
+"oriental-express-gala-karydas-400ml": {
+"masoutis": 2.4,
+"mymarket": 2.06
+},
+"oriental-express-gala-karydas-light-400ml": {
+"masoutis": 2.16,
+"mymarket": 2.0
+},
+"oriental-express-kalampokakia-mikra-330gr": {
+"masoutis": 2.98,
+"mymarket": 2.58
+},
+"oriental-express-panko-frygania-panarismatos-200gr": {
+"masoutis": 2.5,
+"mymarket": 2.05
+},
+"oriental-express-sos-tsili-200ml": {
+"masoutis": 2.87,
+"mymarket": 2.48
+},
+"oscar-sokolatakia-mini-dark-140gr": {
+"masoutis": 2.69,
+"mymarket": 3.06
+},
+"oscar-sokolatakia-mini-galaktos-140gr": {
+"masoutis": 2.69,
+"mymarket": 3.06
+},
+"paliria-spitika-mousakas-350gr": {
+"masoutis": 5.99,
+"mymarket": 5.99
+},
+"palmolive-naturals-meli-gala-afroloutro-500ml": {
+"masoutis": 1.99,
+"mymarket": 2.63
+},
+"palmolive-ygro-piaton-exotic-orchid-750ml": {
+"masoutis": 1.64,
+"mymarket": 1.78
+},
+"palmolive-ygro-piaton-lemon-lime-750ml": {
+"masoutis": 1.71,
+"mymarket": 1.66
+},
+"papadopoulou-2plo-crush-alatismeni-karamela-50gr": {
+"masoutis": 0.96,
+"mymarket": 0.96
+},
+"papadopoulou-2plo-crush-pralina-fountoukiou-50gr": {
+"masoutis": 0.96,
+"mymarket": 0.96
+},
+"papadopoulou-crackinettes-choris-glouteni-100gr": {
+"masoutis": 2.0,
+"mymarket": 1.55
+},
+"papadopoulou-fryganies-choriatikes-me-charoupi-240gr": {
+"masoutis": 2.28,
+"mymarket": 2.3
+},
+"papadopoulou-fryganies-choriatikes-me-sousami-240gr": {
+"masoutis": 2.28,
+"mymarket": 2.3
+},
+"papadopoulou-mpiskota-cookies-me-dipli-sokolata-180gr": {
+"masoutis": 1.75,
+"mymarket": 1.73
+},
+"papadopoulou-mpiskota-cookies-me-kommatia-sokolatas-180gr": {
+"masoutis": 1.75,
+"mymarket": 1.73
+},
+"papadopoulou-mpiskota-miranta-250gr": {
+"masoutis": 1.63,
+"mymarket": 1.64
+},
+"papadopoulou-mpiskota-miranta-2x250gr": {
+"masoutis": 2.66,
+"mymarket": 2.95
+},
+"papadopoulou-mpiskota-sokolata-galaktos-pti-mper-200gr": {
+"masoutis": 2.1,
+"mymarket": 2.1
+},
+"papadopoulou-pick-rounds-335gr": {
+"masoutis": 2.1,
+"mymarket": 2.0
+},
+"papadopoulou-psomi-fetes-lefko-choris-glouteni-300gr": {
+"masoutis": 3.32,
+"mymarket": 2.59
+},
+"papadopoulou-psomi-fetes-polysporo-choris-glouteni-300gr": {
+"masoutis": 3.8,
+"mymarket": 3.05
+},
+"papadopoulou-speculoos-karamelomena-mpiskota-250gr": {
+"masoutis": 2.19,
+"mymarket": 2.1
+},
+"passata-pummaro-500g": {
+"ab": 0.7,
+"masoutis": 0.78,
+"mymarket": 0.7
+},
+"passias-loukanika-grill-peperone-380gr": {
+"masoutis": 5.03,
+"mymarket": 4.23
+},
+"pataks-sos-kary-butter-chicken-450gr": {
+"masoutis": 4.61,
+"mymarket": 5.06
+},
+"pavlidis-kouvertoura-125gr": {
+"masoutis": 2.95,
+"mymarket": 3.05
+},
+"pavlidis-sokolata-ygeias-portokali-100gr": {
+"masoutis": 1.73,
+"mymarket": 1.78
+},
+"pavlidis-sokolata-ygeiass-krema-fraoula-100gr": {
+"masoutis": 1.73,
+"mymarket": 2.57
+},
+"pavlidis-sokolatakia-ygeias-mini-170gr": {
+"masoutis": 6.55,
+"mymarket": 4.44
+},
+"pedigree-pate-skylon-galopoula-kotopoulo-300gr": {
+"masoutis": 2.45,
+"mymarket": 2.45
+},
+"philadelphia-tyri-krema-extra-protein-175gr": {
+"masoutis": 2.38,
+"mymarket": 2.99
+},
+"philadelphia-tyri-krema-me-skordo-chortarika-200gr": {
+"masoutis": 2.95,
+"mymarket": 2.95
+},
+"pilava-ouzo-karafaki-200ml": {
+"masoutis": 4.18,
+"mymarket": 3.82
+},
+"planet-baby-malaktiko-rouchon-40mez-900ml": {
+"masoutis": 3.17,
+"mymarket": 2.9
+},
+"planet-baby-ygro-katharistiko-patomatos-1lt": {
+"masoutis": 2.45,
+"mymarket": 2.03
+},
+"planet-blue-hygiene-ygro-piaton-900ml": {
+"masoutis": 2.59,
+"mymarket": 2.69
+},
+"planet-ygro-katharismou-frouton-lachanikon-450ml": {
+"masoutis": 2.92,
+"mymarket": 3.0
+},
+"powerade-mountain-blast-zero-500ml": {
+"masoutis": 1.26,
+"mymarket": 1.18
+},
+"president-tyri-fetes-toast-light-200gr": {
+"masoutis": 2.79,
+"mymarket": 2.4
+},
+"primo-gusto-saltsa-pesto-mediterraneo-190gr": {
+"masoutis": 3.6,
+"mymarket": 2.87
+},
+"primo-gusto-saltsa-verdure-grigliate-350gr": {
+"masoutis": 3.5,
+"mymarket": 2.8
+},
+"psomi-tost-karamolegkos-480g": {
+"ab": 1.94,
+"masoutis": 1.94,
+"mymarket": 1.94
+},
+"pti-mper-allatini-225g": {
+"ab": 1.11,
+"masoutis": 1.07,
+"mymarket": 1.03
+},
+"purina-dentalife-activfresh-snack-skylou-small-115gr": {
+"masoutis": 2.94,
+"mymarket": 2.21
+},
+"red-bull-energy-drink-250ml": {
+"masoutis": 1.32,
+"mymarket": 1.34
+},
+"red-bull-energy-drink-355ml": {
+"masoutis": 1.78,
+"mymarket": 1.84
+},
+"rio-mare-tonos-se-nero-2x160gr": {
+"masoutis": 5.6,
+"mymarket": 6.02
+},
+"rio-mare-tonos-super-naturale-2x112gr": {
+"masoutis": 6.29,
+"mymarket": 6.74
+},
+"rispet-sampouan-gia-katoikidia-avocado-silk-370-ml": {
+"masoutis": 3.1,
+"mymarket": 3.77
+},
+"rispet-sampouan-gia-katoikidia-coconut-keratin-370-ml": {
+"masoutis": 3.1,
+"mymarket": 3.13
+},
+"rivani-lefkos-afrodis-oinos-0-alkool-750ml": {
+"masoutis": 7.51,
+"mymarket": 7.3
+},
+"rizi-agrino-karolina-500g": {
+"ab": 2.4,
+"masoutis": 2.36,
+"mymarket": 2.55
+},
+"rol-aporrypantiko-ygro-gia-plysimo-sto-cheri-750ml": {
+"masoutis": 2.22,
+"mymarket": 2.21
+},
+"rol-malaktiko-rouchon-chorio-45mez-900ml": {
+"masoutis": 2.96,
+"mymarket": 2.79
+},
+"rol-malaktiko-rouchon-kalntera-45mez-900ml": {
+"masoutis": 2.96,
+"mymarket": 2.79
+},
+"rol-malaktiko-rouchon-kampos-45mez-900ml": {
+"masoutis": 2.96,
+"mymarket": 2.79
+},
+"rol-stains-out-spray-afairesi-lekedon-325ml": {
+"masoutis": 3.44,
+"mymarket": 3.88
+},
+"roli-skoni-katharismou-lemoni-500gr": {
+"masoutis": 1.43,
+"mymarket": 1.05
+},
+"roli-skoni-katharismou-pefko-500gr": {
+"masoutis": 1.43,
+"mymarket": 1.05
+},
+"saltsa-pesto-alla-genovese-de-cecco-190gr": {
+"masoutis": 3.99,
+"mymarket": 4.02
+},
+"sanex-zero-invisible-aposmitiko-roll-on-50ml": {
+"masoutis": 2.84,
+"mymarket": 2.75
+},
+"sanex-zero-respect-control-aposmitiko-roll-on-50ml": {
+"masoutis": 2.84,
+"mymarket": 2.75
+},
+"sanitas-flex-strong-odor-control-sakoules-aporrimaton-kordon": {
+"masoutis": 1.85,
+"mymarket": 1.72
+},
+"sanola-ilielaio-1lt": {
+"masoutis": 2.38,
+"mymarket": 2.58
+},
+"sanola-ilielaio-5lt": {
+"masoutis": 11.45,
+"mymarket": 9.9
+},
+"savoi-voutyro-typou-kerkyras-225gr": {
+"masoutis": 3.33,
+"mymarket": 3.11
+},
+"schwarzkopf-taft-lak-volume-hl4-250ml": {
+"masoutis": 4.22,
+"mymarket": 4.22
+},
+"schweppes-bitter-lemon-4x330ml": {
+"masoutis": 2.64,
+"mymarket": 2.59
+},
+"schweppes-ginger-ale-4x330ml": {
+"masoutis": 2.64,
+"mymarket": 2.59
+},
+"schweppes-mojito-4x330ml": {
+"masoutis": 2.64,
+"mymarket": 2.59
+},
+"schweppes-pink-grapefruit-6x330ml": {
+"masoutis": 4.16,
+"mymarket": 4.16
+},
+"sensodyne-complete-protection-odontokrema-75ml": {
+"masoutis": 3.27,
+"mymarket": 3.27
+},
+"sensodyne-extra-fresh-odontokrema-75ml": {
+"masoutis": 2.65,
+"mymarket": 2.63
+},
+"sensodyne-odontokrema-clinical-white-75ml": {
+"masoutis": 4.68,
+"mymarket": 4.5
+},
+"septona-baby-sampouan-afroloutro-valsamo-aloi-1000ml": {
+"masoutis": 4.28,
+"mymarket": 4.38
+},
+"septona-dermasoft-afroloutro-coconut-mango-750ml": {
+"masoutis": 2.88,
+"mymarket": 2.3
+},
+"septona-kids-afroloutro-agori-koritsi-750ml": {
+"masoutis": 3.0,
+"mymarket": 3.0
+},
+"sergal-giaourti-straggisto-8-lipara-1kg": {
+"masoutis": 4.54,
+"mymarket": 4.52
+},
+"serkova-votka-1lt": {
+"masoutis": 21.25,
+"mymarket": 21.27
+},
+"slim-fix-glykantiko-ygro-me-stevia-60ml": {
+"masoutis": 3.8,
+"mymarket": 2.85
+},
+"soupline-aromatiko-sprey-yfasmaton-levanta-300ml": {
+"masoutis": 4.49,
+"mymarket": 3.29
+},
+"soupline-aromatiko-sprey-yfasmaton-mistral-300ml": {
+"masoutis": 4.49,
+"mymarket": 3.29
+},
+"soupline-aromatiko-sprey-yfasmaton-vanilia-300ml": {
+"masoutis": 4.49,
+"mymarket": 3.29
+},
+"spaggeti-melissa-no6-500g": {
+"ab": 0.72,
+"masoutis": 0.72,
+"mymarket": 0.75
+},
+"sprite-6x330ml": {
+"masoutis": 3.79,
+"mymarket": 3.84
+},
+"stamou-giaourti-agelados-240gr": {
+"masoutis": 1.25,
+"mymarket": 1.27
+},
+"stamou-krema-180gr": {
+"masoutis": 1.15,
+"mymarket": 1.15
+},
+"stamou-moustalevria-180gr": {
+"masoutis": 1.17,
+"mymarket": 1.18
+},
+"stella-chylopites-choriatikes-500gr": {
+"masoutis": 1.13,
+"mymarket": 1.38
+},
+"stella-pennes-rige-500gr": {
+"masoutis": 0.75,
+"mymarket": 0.78
+},
+"str8-afroloutro-wild-beat-750ml": {
+"masoutis": 2.85,
+"mymarket": 3.27
+},
+"str8-ahead-kolonia-100ml": {
+"masoutis": 13.6,
+"mymarket": 13.62
+},
+"sunsweet-chymos-me-damaskina-500ml": {
+"masoutis": 6.05,
+"mymarket": 4.88
+},
+"sunsweet-damaskina-apyrina-250gr": {
+"masoutis": 4.68,
+"mymarket": 4.66
+},
+"tasty-fountounia-190gr": {
+"masoutis": 1.98,
+"mymarket": 1.99
+},
+"tasty-poppers-pop-korn-tyri-75gr": {
+"masoutis": 1.23,
+"mymarket": 1.24
+},
+"tesori-doriente-malaktiko-rouchon-vanilla-ginger-38mez-60ml": {
+"masoutis": 3.77,
+"mymarket": 3.62
+},
+"three-cents-ginger-beer-6x150ml": {
+"masoutis": 5.74,
+"mymarket": 5.76
+},
+"to-manna-kritsinia-pontiaka-me-iliosporo-250gr": {
+"masoutis": 3.27,
+"mymarket": 3.4
+},
+"to-manna-ladokoulouro-290gr": {
+"masoutis": 2.7,
+"mymarket": 3.39
+},
+"to-manna-paximadi-kritharenio-mini-220gr": {
+"masoutis": 1.74,
+"mymarket": 2.35
+},
+"to-manna-paximadi-me-linarosporo-mini-230gr": {
+"masoutis": 1.97,
+"mymarket": 2.83
+},
+"topine-total-power-apolymantiko-sprey-spring-valley-400ml": {
+"masoutis": 3.31,
+"mymarket": 3.25
+},
+"torre-krema-galaktos-20-lipara-200ml": {
+"masoutis": 1.37,
+"mymarket": 1.1
+},
+"trata-tonos-kapnistos-pikantikos-2x160gr": {
+"masoutis": 5.2,
+"mymarket": 5.21
+},
+"trata-tonosalata-me-kinoa-kapnisto-tono-2x160gr": {
+"masoutis": 4.82,
+"mymarket": 5.14
+},
+"tsiki-soda-lemoni-6x330ml": {
+"masoutis": 4.28,
+"mymarket": 5.28
+},
+"tsiki-soda-rodakino-6x330ml": {
+"masoutis": 4.49,
+"mymarket": 5.52
+},
+"twix-minis-sokolata-275gr": {
+"masoutis": 4.48,
+"mymarket": 4.35
+},
+"uhu-syllektis-ygrasias-levanta-40gr": {
+"masoutis": 4.0,
+"mymarket": 3.6
+},
+"uhu-syllektis-ygrasias-vanilia-40gr": {
+"masoutis": 4.0,
+"mymarket": 3.6
+},
+"vahine-fysiko-aroma-portokaliou-20ml": {
+"masoutis": 3.27,
+"mymarket": 3.53
+},
+"varvagianni-mple-ouzo-700ml": {
+"masoutis": 13.15,
+"mymarket": 13.56
+},
+"varvagianni-prasino-ouzo-700ml": {
+"masoutis": 12.6,
+"mymarket": 13.06
+},
+"veet-apotrichotiki-krema-kanonikes-epidermides-100ml": {
+"masoutis": 6.48,
+"mymarket": 6.49
+},
+"veet-for-men-sensitive-apotrichotiki-krema-200ml": {
+"masoutis": 8.48,
+"mymarket": 8.48
+},
+"vikos-pink-grapefruit-6x330ml": {
+"masoutis": 3.96,
+"mymarket": 2.77
+},
+"vikos-portokalada-15lt": {
+"masoutis": 1.7,
+"mymarket": 1.7
+},
+"violanta-family-koulourakia-gemista-fraoula-300gr": {
+"masoutis": 2.97,
+"mymarket": 2.78
+},
+"violanta-mpiskota-breakfast-kakao-mavri-sokolata-180gr": {
+"masoutis": 1.49,
+"mymarket": 1.19
+},
+"violanta-mpiskota-pti-mper-me-gemista-kremas-speculoos-215gr": {
+"masoutis": 1.92,
+"mymarket": 1.77
+},
+"violanta-mpiskota-pti-mper-mini-200gr": {
+"masoutis": 1.09,
+"mymarket": 1.1
+},
+"violanta-mpiskota-vromis-cranberries-200gr": {
+"masoutis": 1.86,
+"mymarket": 1.95
+},
+"violanta-mpiskota-vromis-gemista-tachini-180gr": {
+"masoutis": 1.46,
+"mymarket": 1.99
+},
+"violanta-mpiskota-vromis-me-meli-200gr": {
+"masoutis": 1.86,
+"mymarket": 1.94
+},
+"violanta-mpiskota-vromis-me-sokolata-200gr": {
+"masoutis": 1.86,
+"mymarket": 1.95
+},
+"violanta-mpiskota-zeas-me-karoto-portokali-80gr": {
+"masoutis": 0.93,
+"mymarket": 0.92
+},
+"violanta-soft-twins-cookies-kakao-vanilia-me-sokolata-160gr": {
+"masoutis": 1.63,
+"mymarket": 2.17
+},
+"vitakraft-trofi-gia-kounelia-500gr": {
+"masoutis": 2.48,
+"mymarket": 2.92
+},
+"vitam-cook-bake-250gr": {
+"masoutis": 2.99,
+"mymarket": 2.09
+},
+"vitam-cook-bake-soft-225gr": {
+"masoutis": 2.67,
+"mymarket": 1.87
+},
+"vitam-soft-light-225gr": {
+"masoutis": 1.73,
+"mymarket": 1.73
+},
+"vitam-soft-me-voutyro-225gr-1": {
+"masoutis": 2.97,
+"mymarket": 2.97
+},
+"viva-froutopoto-vyssino-250ml-51": {
+"masoutis": 0.57,
+"mymarket": 2.8
+},
+"voutyro-lurpak-225g": {
+"ab": 4.89,
+"mymarket": 4.71
+},
+"wasa-original-fryganies-275gr": {
+"masoutis": 2.76,
+"mymarket": 2.69
+},
+"whiskas-temptations-trofi-gatas-kotopoulo-tyri-60gr": {
+"masoutis": 2.15,
+"mymarket": 2.25
+},
+"xenia-elies-kalamon-40-ligotero-alati-300gr": {
+"masoutis": 2.92,
+"mymarket": 2.79
+},
+"xenia-exairetiko-partheno-elaiolado-poikilia-athinolia-koron": {
+"masoutis": 8.14,
+"mymarket": 8.1
+},
+"xenia-pop-kalamata-exairetiko-partheno-elaiolado-1lt": {
+"masoutis": 8.4,
+"mymarket": 8.2
+},
+"yfantis-ferrano-prosouto-se-fetes-80gr": {
+"masoutis": 4.88,
+"mymarket": 5.53
+},
+"yfantis-fouantre-choirino-psito-myrodika-choris-glouteni-100": {
+"masoutis": 2.98,
+"mymarket": 2.98
+},
+"yfantis-fouantre-zampon-mpouti-choirino-se-fetes-120gr": {
+"masoutis": 3.32,
+"mymarket": 3.33
+},
+"yfantis-galopoulas-kapnisti-choris-glouteni-fetes-160gr": {
+"masoutis": 3.48,
+"mymarket": 3.38
+},
+"yfantis-pariza-vrasti-choris-glouteni-fetes-160gr": {
+"masoutis": 1.69
+},
+"yfantis-parizaki-choris-glouteni-500gr": {
+"masoutis": 3.91,
+"mymarket": 4.38
+},
+"yfantis-salami-aeros-pikantiko-choris-glouteni-100gr": {
+"masoutis": 2.42,
+"mymarket": 2.3
+},
+"yfantis-zampon-mpouti-vrasti-choris-glouteni-fetes-160gr": {
+"masoutis": 2.98,
+"mymarket": 2.98
+},
+"ygieia-kefir-katsikisio-330ml": {
+"masoutis": 1.56,
+"mymarket": 1.15
+},
+"zagori-anthrakoucho-nero-rodakino-4x330ml": {
+"masoutis": 2.31,
+"mymarket": 2.28
+},
+"zagori-fysiko-metalliko-nero-12x500ml": {
+"masoutis": 2.25,
+"mymarket": 2.16
+},
+"zagori-fysiko-metalliko-nero-1lt": {
+"masoutis": 1.45,
+"mymarket": 0.48
+},
+"zografos-marmelada-me-frouktozi-fraoula-415gr": {
+"masoutis": 3.64,
+"mymarket": 3.52
+},
+"zografos-marmelada-me-frouktozi-verikoko-415gr": {
+"masoutis": 3.64,
+"mymarket": 3.52
+},
+"zografos-marmelada-me-frouktozi-vyssino-415gr": {
+"masoutis": 4.27,
+"mymarket": 3.82
+}
+}
 }
