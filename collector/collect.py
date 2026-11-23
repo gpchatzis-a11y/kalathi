@@ -15,6 +15,7 @@ import json
 import random
 import re
 import sys
+import threading
 import time
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -146,7 +147,7 @@ MS_JS = r"""
 
 def fetch_masoutis(page, url: str) -> dict:
     page.goto(url, wait_until="domcontentloaded", timeout=60000)
-    page.wait_for_selector(".item-price", timeout=30000)
+    page.wait_for_selector(".item-price", timeout=20000)
     d = page.evaluate(MS_JS)
     name = re.sub(r"\s*\|.*$", "", d["name"] or "").strip()
     return {"name": name, "price": parse_eur(d["text"]), "available": True}
@@ -154,6 +155,8 @@ def fetch_masoutis(page, url: str) -> dict:
 
 # ---------------------------------------------------------------- orchestration
 class Fetcher:
+    """Ένας «επισκέπτης» ανά αλυσίδα (δικό του session / browser)."""
+
     def __init__(self):
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": UA, "Accept-Language": "el-GR,el;q=0.9"})
@@ -185,10 +188,13 @@ class Fetcher:
         return fetch_masoutis(self.page(), url)
 
     def close(self):
-        if self._browser:
-            self._browser.close()
-        if self._pw:
-            self._pw.stop()
+        try:
+            if self._browser:
+                self._browser.close()
+            if self._pw:
+                self._pw.stop()
+        except Exception:  # noqa: BLE001
+            pass
 
 
 def probe(urls: list[str]) -> None:
@@ -205,6 +211,41 @@ def probe(urls: list[str]) -> None:
         f.close()
 
 
+# Αν μια αλυσίδα αποτύχει τόσες φορές στη σειρά, σταματάμε να τη ρωτάμε σήμερα
+# (π.χ. μας μπλόκαρε ή άλλαξε η σελίδα της) αντί να συνεχίζουμε άσκοπα.
+MAX_CONSECUTIVE_FAILS = 15
+
+
+def run_chain(chain: str, jobs: list, day: dict, names: dict, errors: list, lock: threading.Lock) -> None:
+    f = Fetcher()
+    fails = 0
+    try:
+        for i, (pid, url) in enumerate(jobs):
+            if fails >= MAX_CONSECUTIVE_FAILS:
+                with lock:
+                    for pid2, url2 in jobs[i:]:
+                        errors.append({"product": pid2, "chain": chain, "url": url2, "error": "παραλείφθηκε (πολλές αποτυχίες στη σειρά)"})
+                print(f"STOP {chain}: {fails} αποτυχίες στη σειρά, παραλείπονται {len(jobs) - i}", file=sys.stderr)
+                break
+            try:
+                r = f.fetch(url)
+                if r["price"] is None:
+                    raise RuntimeError("χωρίς τιμή")
+                with lock:
+                    day.setdefault(pid, {})[chain] = r["price"]
+                    names.setdefault(pid, {})[chain] = r["name"]
+                fails = 0
+                print(f"OK   {chain:9} {r['price']:7.2f}  {pid}")
+            except Exception as e:  # noqa: BLE001
+                fails += 1
+                with lock:
+                    errors.append({"product": pid, "chain": chain, "url": url, "error": f"{type(e).__name__}: {str(e)[:200]}"})
+                print(f"FAIL {chain:9} {pid}: {type(e).__name__}: {str(e)[:120]}", file=sys.stderr)
+            time.sleep(random.uniform(*DELAY))
+    finally:
+        f.close()
+
+
 def collect() -> int:
     basket = yaml.safe_load(BASKET.read_text(encoding="utf-8"))
     today = dt.datetime.now(ZoneInfo("Europe/Athens")).date().isoformat()
@@ -212,34 +253,29 @@ def collect() -> int:
     hist_path = DATA / "history.json"
     history = json.loads(hist_path.read_text(encoding="utf-8")) if hist_path.exists() else {}
 
-    # Ομαδοποίηση ανά αλυσίδα ώστε να μην «σφυροκοπάμε» μία αλυσίδα συνεχόμενα
-    jobs = []
+    # Μία ουρά ανά αλυσίδα. Οι αλυσίδες τρέχουν παράλληλα (διαφορετικά sites),
+    # αλλά μέσα σε κάθε αλυσίδα τα αιτήματα πάνε ένα-ένα με καθυστέρηση.
+    queues: dict[str, list] = {}
     for p in basket["products"]:
         for chain, url in (p.get("urls") or {}).items():
             if url:
-                jobs.append((p["id"], chain, url))
-    random.shuffle(jobs)
+                queues.setdefault(chain, []).append((p["id"], url))
+    for q in queues.values():
+        random.shuffle(q)
+    total = sum(len(q) for q in queues.values())
 
-    f = Fetcher()
-    errors = []
-    day = {}
-    try:
-        for pid, chain, url in jobs:
-            try:
-                r = f.fetch(url)
-                if r["price"] is None:
-                    raise RuntimeError("χωρίς τιμή")
-                day.setdefault(pid, {})[chain] = r["price"]
-                print(f"OK   {pid:24} {chain:9} {r['price']:6.2f}  {r['name']}")
-            except Exception as e:  # noqa: BLE001
-                errors.append({"product": pid, "chain": chain, "url": url, "error": f"{type(e).__name__}: {str(e)[:200]}"})
-                print(f"FAIL {pid:24} {chain:9} {type(e).__name__}: {str(e)[:120]}", file=sys.stderr)
-            time.sleep(random.uniform(*DELAY))
-    finally:
-        f.close()
+    day: dict = {}
+    names: dict = {}
+    errors: list = []
+    lock = threading.Lock()
+    threads = [threading.Thread(target=run_chain, args=(c, q, day, names, errors, lock)) for c, q in queues.items()]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
 
     history[today] = day
-    hist_path.write_text(json.dumps(history, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    hist_path.write_text(json.dumps(history, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
 
     meta = {
         "updated": dt.datetime.now(ZoneInfo("Europe/Athens")).isoformat(timespec="minutes"),
@@ -247,11 +283,13 @@ def collect() -> int:
         "products": [
             {k: p.get(k) for k in ("id", "name", "category", "urls")} for p in basket["products"]
         ],
-        "errors": errors,
-        "ok": len(jobs) - len(errors),
-        "total": len(jobs),
+        "errors": sorted(errors, key=lambda e: (e["chain"], e["product"])),
+        "ok": total - len(errors),
+        "total": total,
     }
-    (DATA / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
+    (DATA / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=0), encoding="utf-8")
+    # Τα ονόματα όπως τα δείχνει κάθε e-shop: χρήσιμα για έλεγχο σωστής αντιστοίχισης
+    (DATA / "names.json").write_text(json.dumps(names, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     print(f"\n{meta['ok']}/{meta['total']} τιμές συλλέχθηκαν για {today}.")
     # Αποτυγχάνουμε μόνο αν δεν πήραμε σχεδόν τίποτα (π.χ. μπλόκαρε κάποιο site)
     return 0 if meta["ok"] >= meta["total"] * 0.5 else 1

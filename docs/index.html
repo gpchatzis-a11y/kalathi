@@ -19,6 +19,7 @@
   --series-3: #1baf7a;
   --good: #006300;
   --bad: #b42b2b;
+  --warn: #8a5a00;
   --hl: #e8f1fc;
 }
 @media (prefers-color-scheme: dark) {
@@ -36,18 +37,22 @@
     --series-3: #199e70;
     --good: #4cc44c;
     --bad: #ef7b7b;
+    --warn: #e0b050;
     --hl: #1d2a3a;
   }
 }
 * { box-sizing: border-box; }
 body { margin: 0; font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 .viz-root { background: var(--surface-0); color: var(--text-primary); min-height: 100vh; padding: 24px 16px 48px; }
-.wrap { max-width: 1040px; margin: 0 auto; }
+.wrap { max-width: 1080px; margin: 0 auto; }
 h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: -0.01em; }
 h2 { font-size: 16px; margin: 0 0 12px; }
-.sub { color: var(--text-secondary); margin: 0 0 20px; }
+.sub { color: var(--text-secondary); margin: 0 0 16px; }
 .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 16px; }
 .muted { color: var(--text-muted); font-size: 13px; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 99px; padding: 3px; background: var(--surface-1); margin-bottom: 16px; flex-wrap: wrap; }
+.seg button { font: inherit; font-size: 14px; border: 0; background: none; padding: 6px 14px; border-radius: 99px; color: var(--text-secondary); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--text-primary); color: var(--surface-1); }
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 16px; }
 .tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
 .tile .lbl { display: flex; align-items: center; gap: 8px; color: var(--text-secondary); font-size: 14px; }
@@ -55,30 +60,37 @@ h2 { font-size: 16px; margin: 0 0 12px; }
 .tile .delta { font-size: 13px; color: var(--text-secondary); }
 .tile.best { outline: 2px solid var(--series-1); outline-offset: -2px; }
 .badge { font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 99px; background: var(--hl); color: var(--text-primary); margin-left: auto; }
-.sw { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.sw { width: 10px; height: 10px; border-radius: 3px; flex: none; display: inline-block; }
 .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
 .chart { position: relative; }
 .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
 .tip { position: absolute; pointer-events: none; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 13px; box-shadow: 0 4px 16px rgba(0,0,0,.12); display: none; min-width: 170px; z-index: 2; }
 .tip .row { display: flex; align-items: center; gap: 6px; }
-.tip .row b { margin-left: auto; font-variant-numeric: tabular-nums; }
-.controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.tip .row b { margin-left: auto; padding-left: 12px; font-variant-numeric: tabular-nums; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
 .controls button { font: inherit; font-size: 13px; padding: 5px 12px; border-radius: 99px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary); cursor: pointer; }
 .controls button[aria-pressed="true"] { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
+.controls input, .controls select { font: inherit; font-size: 14px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-primary); }
+.controls input { flex: 1 1 240px; min-width: 0; }
 table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 th, td { padding: 8px 10px; border-bottom: 1px solid var(--grid); text-align: right; white-space: nowrap; }
 th:first-child, td:first-child { text-align: left; white-space: normal; }
 th { font-size: 13px; color: var(--text-secondary); font-weight: 600; }
-th .sw { display: inline-block; margin-right: 6px; vertical-align: -1px; }
+th .sw { margin-right: 6px; vertical-align: -1px; }
 td.cheap { background: var(--hl); font-weight: 650; }
 td.cheap::after { content: " ▼"; font-size: 10px; color: var(--text-secondary); }
 td .chg { display: block; font-size: 11px; font-weight: 500; }
 .up { color: var(--bad); } .down { color: var(--good); }
 td a { color: inherit; text-decoration: none; } td a:hover { text-decoration: underline; }
 .cat { font-size: 12px; color: var(--text-muted); }
+.warn { font-size: 12px; color: var(--warn); }
 .scroll { overflow-x: auto; }
-.err li { margin: 2px 0; }
+.more { margin-top: 12px; text-align: center; }
+.more button { font: inherit; font-size: 14px; padding: 7px 16px; border-radius: 99px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-primary); cursor: pointer; }
+details summary { cursor: pointer; font-weight: 600; }
+.err { columns: 2 320px; margin: 10px 0 0; padding-left: 18px; }
+.err li { margin: 2px 0; break-inside: avoid; }
 footer { color: var(--text-muted); font-size: 12px; margin-top: 24px; }
 </style>
 </head>
@@ -88,28 +100,44 @@ footer { color: var(--text-muted); font-size: 12px; margin-top: 24px; }
   <h1>Καλάθι — τιμές σούπερ μάρκετ</h1>
   <p class="sub" id="sub">Φόρτωση…</p>
 
+  <div class="seg" id="modes" role="group" aria-label="Ποιο καλάθι"></div>
   <div class="tiles" id="tiles"></div>
 
   <div class="card">
-    <h2>Κόστος συγκρίσιμου καλαθιού ανά ημέρα</h2>
+    <h2 id="chartTitle">Κόστος καλαθιού ανά ημέρα</h2>
     <div class="legend" id="legend"></div>
     <div class="chart" id="chart"><svg id="svg" role="img" aria-label="Εξέλιξη κόστους καλαθιού ανά αλυσίδα"></svg><div class="tip" id="tip"></div></div>
     <p class="muted" id="chartNote"></p>
   </div>
 
   <div class="card">
+    <h2>Ανά κατηγορία</h2>
+    <div class="scroll"><table id="catTbl"></table></div>
+    <p class="muted">Σύνολο των κοινών προϊόντων κάθε κατηγορίας στο επιλεγμένο καλάθι. «Φθηνότερη» = σε πόσα από αυτά η αλυσίδα έχει τη χαμηλότερη τιμή.</p>
+  </div>
+
+  <div class="card">
     <h2>Τιμές ανά προϊόν</h2>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Αναζήτηση προϊόντος ή μάρκας…" aria-label="Αναζήτηση">
+      <select id="sort" aria-label="Ταξινόμηση">
+        <option value="name">Αλφαβητικά</option>
+        <option value="diff">Μεγαλύτερη διαφορά τιμής</option>
+        <option value="chg">Πρόσφατες αλλαγές τιμής</option>
+        <option value="price">Ακριβότερα πρώτα</option>
+      </select>
+    </div>
     <div class="controls" id="cats"></div>
     <div class="scroll"><table id="tbl"></table></div>
-    <p class="muted">▼ = φθηνότερη τιμή σήμερα. Το μικρό ποσό κάτω από κάθε τιμή είναι η αλλαγή από την προηγούμενη μέτρηση.</p>
+    <div class="more" id="more"></div>
+    <p class="muted">▼ = φθηνότερη τιμή σήμερα. Το μικρό ποσό κάτω από κάθε τιμή είναι η αλλαγή από την προηγούμενη μέτρηση. Πάτα μια τιμή για να ανοίξει η σελίδα του προϊόντος.</p>
   </div>
 
   <div class="card" id="errCard" hidden>
-    <h2>Τιμές που δεν συλλέχθηκαν σήμερα</h2>
-    <ul class="err muted" id="errs"></ul>
+    <details><summary id="errSum"></summary><ul class="err muted" id="errs"></ul></details>
   </div>
 
-  <footer>Οι τιμές συλλέγονται αυτόματα μία φορά την ημέρα από τις δημόσιες σελίδες των e-shop. Είναι τιμές e-shop, πανελλαδικές, και μπορεί να διαφέρουν λίγο από το φυσικό κατάστημα.</footer>
+  <footer>Οι τιμές συλλέγονται αυτόματα μία φορά την ημέρα από τις δημόσιες σελίδες των e-shop. Είναι τιμές e-shop, πανελλαδικές, και μπορεί να διαφέρουν λίγο από το φυσικό κατάστημα. Τα προϊόντα αντιστοιχίστηκαν αυτόματα ανάμεσα στις αλυσίδες (ίδια μάρκα και συσκευασία). Όπου οι τιμές διαφέρουν πολύ (⚠), μάλλον δεν είναι ακριβώς το ίδιο προϊόν και δεν μετράει στα σύνολα.</footer>
 </div>
 </div>
 
@@ -118,124 +146,215 @@ const SERIES = ["mymarket", "ab", "masoutis"];        // σταθερή σειρ
 const color = c => `var(--series-${SERIES.indexOf(c) + 1})`;
 const eur = v => v == null ? "—" : v.toLocaleString("el-GR", { style: "currency", currency: "EUR" });
 const fmtDate = d => new Date(d + "T12:00:00").toLocaleDateString("el-GR", { day: "numeric", month: "short" });
+const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
 const el = (tag, attrs = {}, html = "") => { const e = document.createElement(tag); for (const k in attrs) e.setAttribute(k, attrs[k]); e.innerHTML = html; return e; };
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const SUSPECT_RATIO = 1.6;   // αν η ακριβότερη τιμή είναι >60% πάνω από τη φθηνότερη, μάλλον λάθος αντιστοίχιση
+const PAGE = 60;
 
 Promise.all([fetch("data/meta.json").then(r => r.json()), fetch("data/history.json").then(r => r.json())])
   .then(([meta, hist]) => render(meta, hist))
   .catch(e => { document.getElementById("sub").textContent = "Δεν βρέθηκαν δεδομένα ακόμα: " + e; });
 
 function render(meta, hist) {
-  const chains = SERIES.filter(c => meta.chains[c]);
+  const allChains = SERIES.filter(c => meta.chains[c]);
   const dates = Object.keys(hist).sort();
   const today = dates[dates.length - 1];
   const prev = dates.length > 1 ? dates[dates.length - 2] : null;
   const products = meta.products;
+  const byId = Object.fromEntries(products.map(p => [p.id, p]));
+  const day = hist[today] || {}, pday = prev ? hist[prev] || {} : {};
 
-  // Συγκρίσιμο καλάθι: τα προϊόντα που έχουν τιμή σε ΟΛΕΣ τις αλυσίδες εκείνη τη μέρα
-  const basketOn = d => {
-    const day = hist[d] || {};
-    const ids = products.map(p => p.id).filter(id => chains.every(c => day[id] && day[id][c] != null));
-    const totals = Object.fromEntries(chains.map(c => [c, ids.reduce((s, id) => s + day[id][c], 0)]));
-    return { ids, totals };
+  const suspect = row => {
+    const v = Object.values(row || {}).filter(x => x != null);
+    return v.length > 1 && Math.max(...v) / Math.min(...v) > SUSPECT_RATIO;
   };
-  const bToday = basketOn(today);
-  const bPrev = prev ? basketOn(prev) : null;
+
+  // Καλάθια: ποιες αλυσίδες συγκρίνουμε. Προτεραιότητα σε όποιο ζεύγος έχει τα περισσότερα κοινά.
+  const countFor = cs => products.filter(p => cs.every(c => day[p.id] && day[p.id][c] != null) && !suspect(day[p.id])).length;
+  const modes = [];
+  const pairs = [];
+  for (let i = 0; i < allChains.length; i++) for (let j = i + 1; j < allChains.length; j++) pairs.push([allChains[i], allChains[j]]);
+  pairs.sort((a, b) => countFor(b) - countFor(a));
+  if (pairs.length && countFor(pairs[0])) modes.push({ chains: pairs[0], label: pairs[0].map(c => meta.chains[c]).join(" vs ") });
+  if (allChains.length > 2 && countFor(allChains)) modes.push({ chains: allChains, label: `Και οι ${allChains.length} αλυσίδες` });
+  if (!modes.length) modes.push({ chains: allChains, label: "Όλες" });
+  modes.forEach(m => m.label += ` · ${countFor(m.chains)} προϊόντα`);
 
   document.getElementById("sub").textContent =
     `Τελευταία ενημέρωση: ${new Date(meta.updated).toLocaleString("el-GR", { dateStyle: "medium", timeStyle: "short" })} · ` +
-    `${products.length} προϊόντα · ${chains.length} αλυσίδες · ${meta.ok}/${meta.total} τιμές σήμερα`;
+    `${products.length} προϊόντα · ${allChains.length} αλυσίδες · ${meta.ok}/${meta.total} τιμές σήμερα`;
 
-  // ---- Tiles
-  const tiles = document.getElementById("tiles");
-  const best = chains.reduce((a, c) => bToday.totals[c] < bToday.totals[a] ? c : a, chains[0]);
-  chains.forEach(c => {
-    const t = bToday.totals[c];
-    let delta = "";
-    if (bPrev && bPrev.totals[c] && bPrev.ids.length === bToday.ids.length) {
-      const d = t - bPrev.totals[c];
-      delta = Math.abs(d) < 0.005 ? "Χωρίς αλλαγή από χθες" :
-        `<span class="${d > 0 ? "up" : "down"}">${d > 0 ? "▲" : "▼"} ${eur(Math.abs(d))}</span> από την προηγούμενη μέτρηση`;
-    } else {
-      const diff = t - bToday.totals[best];
-      delta = c === best ? "Φθηνότερη σήμερα" : `+${eur(diff)} (+${(diff / bToday.totals[best] * 100).toFixed(1)}%) από τη φθηνότερη`;
-    }
-    const tile = el("div", { class: "tile" + (c === best ? " best" : "") },
-      `<div class="lbl"><span class="sw" style="background:${color(c)}"></span>${meta.chains[c]}${c === best ? '<span class="badge">Φθηνότερη</span>' : ""}</div>
-       <div class="val">${eur(t)}</div><div class="delta">${delta}</div>`);
-    tiles.appendChild(tile);
+  let mode = modes[0];
+  const mbox = document.getElementById("modes");
+  modes.forEach(m => {
+    const b = el("button", { type: "button", "aria-pressed": m === mode }, esc(m.label));
+    b.onclick = () => { mode = m; [...mbox.children].forEach(x => x.setAttribute("aria-pressed", x === b)); drawMode(); drawTable(true); };
+    mbox.appendChild(b);
   });
-  tiles.appendChild(el("div", { class: "tile" },
-    `<div class="lbl">Συγκρίσιμο καλάθι</div><div class="val">${bToday.ids.length}</div>
-     <div class="delta">προϊόντα που υπάρχουν και στις ${chains.length} αλυσίδες σήμερα</div>`));
 
-  // ---- Legend
-  const lg = document.getElementById("legend");
-  chains.forEach(c => lg.appendChild(el("span", {}, `<span class="sw" style="background:${color(c)}"></span>${meta.chains[c]}`)));
+  const basketOn = (d, chains) => {
+    const dd = hist[d] || {};
+    const ids = products.map(p => p.id).filter(id => chains.every(c => dd[id] && dd[id][c] != null) && !suspect(dd[id]));
+    const totals = Object.fromEntries(chains.map(c => [c, ids.reduce((s, id) => s + dd[id][c], 0)]));
+    return { ids, totals };
+  };
 
-  drawChart(dates.map(d => ({ d, ...basketOn(d) })), chains, meta);
+  function drawMode() {
+    const chains = mode.chains;
+    const bToday = basketOn(today, chains);
+    // Για σύγκριση με χθες: ίδια ακριβώς προϊόντα και τις δύο μέρες
+    const common = prev ? bToday.ids.filter(id => chains.every(c => pday[id] && pday[id][c] != null)) : [];
+    const wins = Object.fromEntries(chains.map(c => [c, 0]));
+    bToday.ids.forEach(id => {
+      const v = chains.map(c => day[id][c]), mn = Math.min(...v);
+      if (v.filter(x => x === mn).length === 1) wins[chains[v.indexOf(mn)]]++;
+    });
+    const tiles = document.getElementById("tiles");
+    tiles.innerHTML = "";
+    const best = chains.reduce((a, c) => bToday.totals[c] < bToday.totals[a] ? c : a, chains[0]);
+    chains.forEach(c => {
+      const t = bToday.totals[c];
+      const diff = t - bToday.totals[best];
+      let line1 = c === best ? "Φθηνότερη συνολικά" : `+${eur(diff)} (+${(diff / bToday.totals[best] * 100).toFixed(1)}%) από τη φθηνότερη`;
+      let line2 = `Φθηνότερη σε ${wins[c]} από ${bToday.ids.length} προϊόντα`;
+      if (common.length) {
+        const d = common.reduce((s, id) => s + day[id][c] - pday[id][c], 0);
+        line2 += Math.abs(d) < 0.005 ? " · χωρίς αλλαγή από χθες" :
+          ` · <span class="${d > 0 ? "up" : "down"}">${d > 0 ? "▲" : "▼"} ${eur(Math.abs(d))}</span> από χθες`;
+      }
+      tiles.appendChild(el("div", { class: "tile" + (c === best ? " best" : "") },
+        `<div class="lbl"><span class="sw" style="background:${color(c)}"></span>${esc(meta.chains[c])}${c === best ? '<span class="badge">Φθηνότερη</span>' : ""}</div>
+         <div class="val">${eur(t)}</div><div class="delta">${line1}</div><div class="delta">${line2}</div>`));
+    });
+    tiles.appendChild(el("div", { class: "tile" },
+      `<div class="lbl">Προϊόντα στο καλάθι</div><div class="val">${bToday.ids.length}</div>
+       <div class="delta">όσα έχουν τιμή σε ${chains.map(c => esc(meta.chains[c])).join(" και ")} σήμερα</div>`));
+
+    const lg = document.getElementById("legend");
+    lg.innerHTML = "";
+    chains.forEach(c => lg.appendChild(el("span", {}, `<span class="sw" style="background:${color(c)}"></span>${esc(meta.chains[c])}`)));
+    drawChart(dates.map(d => ({ d, ...basketOn(d, chains) })), chains, meta);
+    drawCats(bToday, chains);
+  }
+
+  function drawCats(b, chains) {
+    const cats = {};
+    b.ids.forEach(id => {
+      const cat = byId[id].category;
+      const o = cats[cat] ||= { n: 0, tot: Object.fromEntries(chains.map(c => [c, 0])), wins: Object.fromEntries(chains.map(c => [c, 0])) };
+      o.n++;
+      const v = chains.map(c => day[id][c]), mn = Math.min(...v);
+      chains.forEach(c => o.tot[c] += day[id][c]);
+      if (v.filter(x => x === mn).length === 1) o.wins[chains[v.indexOf(mn)]]++;
+    });
+    let h = `<thead><tr><th>Κατηγορία</th><th>Προϊόντα</th>${chains.map(c => `<th><span class="sw" style="background:${color(c)}"></span>${esc(meta.chains[c])}</th>`).join("")}</tr></thead><tbody>`;
+    Object.entries(cats).sort((a, b) => b[1].n - a[1].n).forEach(([cat, o]) => {
+      const mn = Math.min(...chains.map(c => o.tot[c]));
+      h += `<tr><td>${esc(cat)}</td><td>${o.n}</td>`;
+      chains.forEach(c => {
+        h += `<td class="${o.tot[c] === mn ? "cheap" : ""}">${eur(o.tot[c])}<span class="chg muted">φθηνότερη σε ${o.wins[c]}</span></td>`;
+      });
+      h += "</tr>";
+    });
+    document.getElementById("catTbl").innerHTML = h + "</tbody>";
+  }
 
   // ---- Table
   const cats = ["Όλα", ...new Set(products.map(p => p.category))];
   const cbox = document.getElementById("cats");
-  let current = "Όλα";
+  let current = "Όλα", shown = PAGE;
   cats.forEach(cat => {
-    const b = el("button", { type: "button", "aria-pressed": cat === current }, cat);
-    b.onclick = () => { current = cat; [...cbox.children].forEach(x => x.setAttribute("aria-pressed", x === b)); drawTable(); };
+    const b = el("button", { type: "button", "aria-pressed": cat === current }, esc(cat));
+    b.onclick = () => { current = cat; [...cbox.children].forEach(x => x.setAttribute("aria-pressed", x === b)); drawTable(true); };
     cbox.appendChild(b);
   });
-  function drawTable() {
-    const tbl = document.getElementById("tbl");
-    const day = hist[today] || {}, pday = prev ? hist[prev] || {} : {};
-    let h = `<thead><tr><th>Προϊόν</th>${chains.map(c => `<th><span class="sw" style="background:${color(c)}"></span>${meta.chains[c]}</th>`).join("")}</tr></thead><tbody>`;
-    products.filter(p => current === "Όλα" || p.category === current).forEach(p => {
+  const qInput = document.getElementById("q"), sortSel = document.getElementById("sort");
+  qInput.oninput = () => drawTable(true);
+  sortSel.onchange = () => drawTable(true);
+  products.forEach(p => p._n = norm(p.name));
+
+  function drawTable(reset) {
+    if (reset) shown = PAGE;
+    const chains = allChains.filter(c => products.some(p => p.urls && p.urls[c]));
+    const q = norm(qInput.value.trim());
+    const terms = q.split(/\s+/).filter(Boolean);
+    let rows = products.filter(p => (current === "Όλα" || p.category === current) && terms.every(t => p._n.includes(t)));
+    const vals = p => Object.values(day[p.id] || {}).filter(v => v != null);
+    const spread = p => { const v = vals(p); return v.length > 1 && !suspect(day[p.id]) ? (Math.max(...v) - Math.min(...v)) / Math.min(...v) : -1; };
+    const change = p => chains.reduce((s, c) => { const v = day[p.id]?.[c], pv = pday[p.id]?.[c]; return s + (v != null && pv != null ? Math.abs(v - pv) / pv : 0); }, 0);
+    const sorters = {
+      name: (a, b) => a.name.localeCompare(b.name, "el"),
+      diff: (a, b) => spread(b) - spread(a),
+      chg: (a, b) => change(b) - change(a),
+      price: (a, b) => Math.max(0, ...vals(b)) - Math.max(0, ...vals(a)),
+    };
+    rows.sort(sorters[sortSel.value]);
+    const total = rows.length;
+    rows = rows.slice(0, shown);
+    let h = `<thead><tr><th>Προϊόν</th>${chains.map(c => `<th><span class="sw" style="background:${color(c)}"></span>${esc(meta.chains[c])}</th>`).join("")}<th>Διαφορά</th></tr></thead><tbody>`;
+    rows.forEach(p => {
       const row = day[p.id] || {};
-      const vals = chains.map(c => row[c]).filter(v => v != null);
-      const min = vals.length > 1 ? Math.min(...vals) : null;
-      h += `<tr><td>${p.name}<div class="cat">${p.category}</div></td>`;
+      const v = chains.map(c => row[c]).filter(x => x != null);
+      const sus = suspect(row);
+      const min = v.length > 1 && !sus ? Math.min(...v) : null;
+      const sp = spread(p);
+      h += `<tr><td>${esc(p.name)}<div class="cat">${esc(p.category)}</div>${sus ? '<div class="warn">⚠ πολύ διαφορετικές τιμές — ίσως όχι ίδιο προϊόν</div>' : ""}</td>`;
       chains.forEach(c => {
-        const v = row[c], pv = pday[p.id] && pday[p.id][c];
+        const val = row[c], pv = pday[p.id] && pday[p.id][c];
         let chg = "";
-        if (v != null && pv != null && Math.abs(v - pv) >= 0.005)
-          chg = `<span class="chg ${v > pv ? "up" : "down"}">${v > pv ? "+" : "−"}${eur(Math.abs(v - pv))}</span>`;
+        if (val != null && pv != null && Math.abs(val - pv) >= 0.005)
+          chg = `<span class="chg ${val > pv ? "up" : "down"}">${val > pv ? "+" : "−"}${eur(Math.abs(val - pv))}</span>`;
         const url = p.urls && p.urls[c];
-        const cell = v == null ? "—" : (url ? `<a href="${url}" target="_blank" rel="noopener">${eur(v)}</a>` : eur(v));
-        h += `<td class="${min != null && v === min ? "cheap" : ""}">${cell}${chg}</td>`;
+        const cell = val == null ? (url ? "—" : '<span class="muted" title="Δεν παρακολουθείται σε αυτή την αλυσίδα">·</span>') : (url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${eur(val)}</a>` : eur(val));
+        h += `<td class="${min != null && val === min ? "cheap" : ""}">${cell}${chg}</td>`;
       });
-      h += "</tr>";
+      h += `<td class="muted">${sp > 0.0005 ? "+" + (sp * 100).toFixed(0) + "%" : sp >= 0 ? "ίδια" : ""}</td></tr>`;
     });
-    tbl.innerHTML = h + "</tbody>";
+    if (!rows.length) h += `<tr><td colspan="${chains.length + 2}" class="muted">Κανένα προϊόν δεν ταιριάζει.</td></tr>`;
+    document.getElementById("tbl").innerHTML = h + "</tbody>";
+    const more = document.getElementById("more");
+    more.innerHTML = "";
+    if (total > shown) {
+      const b = el("button", { type: "button" }, `Δείξε περισσότερα (${shown} από ${total})`);
+      b.onclick = () => { shown += PAGE * 2; drawTable(false); };
+      more.appendChild(b);
+    } else if (total) more.innerHTML = `<span class="muted">${total} προϊόντα</span>`;
   }
-  drawTable();
+
+  drawMode();
+  drawTable(true);
 
   // ---- Errors
   if (meta.errors && meta.errors.length) {
     document.getElementById("errCard").hidden = false;
-    const name = id => (products.find(p => p.id === id) || {}).name || id;
-    document.getElementById("errs").innerHTML = meta.errors.map(e => `<li>${name(e.product)} — ${meta.chains[e.chain] || e.chain}</li>`).join("");
+    document.getElementById("errSum").textContent = `Τιμές που δεν συλλέχθηκαν σήμερα (${meta.errors.length})`;
+    const name = id => (byId[id] || {}).name || id;
+    document.getElementById("errs").innerHTML = meta.errors.map(e => `<li>${esc(name(e.product))} — ${esc(meta.chains[e.chain] || e.chain)}</li>`).join("");
   }
 }
 
 function drawChart(series, chains, meta) {
   const svg = document.getElementById("svg"), tip = document.getElementById("tip");
-  const W = 960, H = 280, m = { l: 56, r: 16, t: 12, b: 28 };
+  const W = 960, H = 280, m = { l: 64, r: 16, t: 12, b: 28 };
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
   const pts = series.filter(s => s.ids.length);
   const note = document.getElementById("chartNote");
-  if (!pts.length) { note.textContent = "Δεν υπάρχουν ακόμα δεδομένα."; return; }
-  note.textContent = pts.length < 2
-    ? "Υπάρχει μόνο μία μέτρηση μέχρι στιγμής. Το γράφημα θα γεμίζει κάθε μέρα."
-    : "Το σύνολο αφορά μόνο τα προϊόντα που υπήρχαν σε όλες τις αλυσίδες κάθε μέρα.";
+  if (!pts.length) { svg.innerHTML = ""; note.textContent = "Δεν υπάρχουν ακόμα δεδομένα."; return; }
+  note.textContent = (pts.length < 2
+    ? "Υπάρχει μόνο μία μέτρηση μέχρι στιγμής. Το γράφημα θα γεμίζει κάθε μέρα. "
+    : "") + "Κάθε μέρα μετράει μόνο τα προϊόντα που είχαν τιμή σε όλες τις αλυσίδες εκείνη τη μέρα, οπότε ο αριθμός τους μπορεί να αλλάζει λίγο.";
   const all = pts.flatMap(s => chains.map(c => s.totals[c]));
   let lo = Math.min(...all), hi = Math.max(...all);
   const pad = Math.max((hi - lo) * 0.15, 1);
-  const tstep = [1, 2, 5, 10, 20, 50].find(s => (hi - lo + 2 * pad) / s <= 6) || 100;
+  const tstep = [1, 2, 5, 10, 20, 50, 100, 200, 500].find(s => (hi - lo + 2 * pad) / s <= 6) || 1000;
   lo = Math.floor((lo - pad) / tstep) * tstep; hi = Math.ceil((hi + pad) / tstep) * tstep;
   const x = i => pts.length === 1 ? (m.l + W - m.r) / 2 : m.l + i * (W - m.l - m.r) / (pts.length - 1);
   const y = v => m.t + (hi - v) * (H - m.t - m.b) / (hi - lo);
   let g = "";
   for (let v = lo; v <= hi + 1e-9; v += tstep) {
     g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)" stroke-width="1"/>
-          <text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end" font-size="12" fill="var(--text-muted)">${v.toFixed(0)} €</text>`;
+          <text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end" font-size="12" fill="var(--text-muted)">${v.toLocaleString("el-GR")} €</text>`;
   }
   const step = Math.max(1, Math.ceil(pts.length / 8));
   pts.forEach((s, i) => { if (i % step === 0 || i === pts.length - 1)
@@ -258,7 +377,7 @@ function drawChart(series, chains, meta) {
     const s = pts[i];
     xh.setAttribute("x1", x(i)); xh.setAttribute("x2", x(i)); xh.setAttribute("visibility", "visible");
     const rows = [...chains].sort((a, b) => s.totals[a] - s.totals[b])
-      .map(c => `<div class="row"><span class="sw" style="background:${color(c)}"></span>${meta.chains[c]}<b>${eur(s.totals[c])}</b></div>`).join("");
+      .map(c => `<div class="row"><span class="sw" style="background:${color(c)}"></span>${esc(meta.chains[c])}<b>${eur(s.totals[c])}</b></div>`).join("");
     tip.innerHTML = `<div class="muted" style="margin-bottom:4px">${fmtDate(s.d)} · ${s.ids.length} προϊόντα</div>${rows}`;
     tip.style.display = "block";
     const px = x(i) * r.width / W;
