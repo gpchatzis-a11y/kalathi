@@ -2939,13 +2939,6 @@ products:
       mymarket: "https://www.mymarket.gr/olympos-fysikos-chymos-portokali-250ml"
       masoutis: "https://www.masoutis.gr/categories/item/olumpos-fusikos-xumos-portokali-250ml?3192317="
 
-  - id: viva-froutopoto-vyssino-250ml-51
-    name: "Viva Φρουτοποτό Βύσσινο 250ml 5+1"
-    category: "Ποτά & νερό"
-    urls:
-      mymarket: "https://www.mymarket.gr/viva-froutopoto-vyssino-250ml-51"
-      masoutis: "https://www.masoutis.gr/categories/item/viva-froutopoto-bussino-250ml?3777042="
-
   - id: sunsweet-chymos-me-damaskina-500ml
     name: "Sunsweet Χυμός Με Δαμάσκηνα 500ml"
     category: "Ποτά & νερό"

@@ -137,7 +137,7 @@ footer { color: var(--text-muted); font-size: 12px; margin-top: 24px; }
     <details><summary id="errSum"></summary><ul class="err muted" id="errs"></ul></details>
   </div>
 
-  <footer>Οι τιμές συλλέγονται αυτόματα μία φορά την ημέρα από τις δημόσιες σελίδες των e-shop. Είναι τιμές e-shop, πανελλαδικές, και μπορεί να διαφέρουν λίγο από το φυσικό κατάστημα. Τα προϊόντα αντιστοιχίστηκαν αυτόματα ανάμεσα στις αλυσίδες (ίδια μάρκα και συσκευασία). Όπου οι τιμές διαφέρουν πολύ (⚠), μάλλον δεν είναι ακριβώς το ίδιο προϊόν και δεν μετράει στα σύνολα.</footer>
+  <footer>Οι τιμές συλλέγονται αυτόματα μία φορά την ημέρα από τις δημόσιες σελίδες των e-shop. Είναι τιμές e-shop, πανελλαδικές, και μπορεί να διαφέρουν λίγο από το φυσικό κατάστημα. Τα προϊόντα αντιστοιχίστηκαν αυτόματα ανάμεσα στις αλυσίδες (ίδια μάρκα και συσκευασία). Όπου η μία τιμή είναι πάνω από 2,5 φορές η άλλη (⚠), μάλλον δεν είναι ακριβώς το ίδιο προϊόν και δεν μετράει στα σύνολα.</footer>
 </div>
 </div>
 
@@ -149,7 +149,7 @@ const fmtDate = d => new Date(d + "T12:00:00").toLocaleDateString("el-GR", { day
 const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
 const el = (tag, attrs = {}, html = "") => { const e = document.createElement(tag); for (const k in attrs) e.setAttribute(k, attrs[k]); e.innerHTML = html; return e; };
 const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-const SUSPECT_RATIO = 1.6;   // αν η ακριβότερη τιμή είναι >60% πάνω από τη φθηνότερη, μάλλον λάθος αντιστοίχιση
+const SUSPECT_RATIO = 2.5;   // αν η ακριβότερη τιμή είναι >150% πάνω από τη φθηνότερη, μάλλον λάθος αντιστοίχιση
 const PAGE = 60;
 
 Promise.all([fetch("data/meta.json").then(r => r.json()), fetch("data/history.json").then(r => r.json())])
