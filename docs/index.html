@@ -218,7 +218,7 @@ function render(meta, hist) {
       const diff = t - bToday.totals[best];
       let line1 = c === best ? "Φθηνότερη συνολικά" : `+${eur(diff)} (+${(diff / bToday.totals[best] * 100).toFixed(1)}%) από τη φθηνότερη`;
       let line2 = `Φθηνότερη σε ${wins[c]} από ${bToday.ids.length} προϊόντα`;
-      if (common.length) {
+      if (common.length >= bToday.ids.length * 0.8) {
         const d = common.reduce((s, id) => s + day[id][c] - pday[id][c], 0);
         line2 += Math.abs(d) < 0.005 ? " · χωρίς αλλαγή από χθες" :
           ` · <span class="${d > 0 ? "up" : "down"}">${d > 0 ? "▲" : "▼"} ${eur(Math.abs(d))}</span> από χθες`;
@@ -338,7 +338,9 @@ function drawChart(series, chains, meta) {
   const svg = document.getElementById("svg"), tip = document.getElementById("tip");
   const W = 960, H = 280, m = { l: 64, r: 16, t: 12, b: 28 };
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-  const pts = series.filter(s => s.ids.length);
+  // Μέρες με πολύ μικρότερο καλάθι (π.χ. πριν προστεθούν προϊόντα) δεν είναι συγκρίσιμες
+  const maxN = Math.max(0, ...series.map(s => s.ids.length));
+  const pts = series.filter(s => s.ids.length && s.ids.length >= maxN * 0.8);
   const note = document.getElementById("chartNote");
   if (!pts.length) { svg.innerHTML = ""; note.textContent = "Δεν υπάρχουν ακόμα δεδομένα."; return; }
   note.textContent = (pts.length < 2
@@ -348,7 +350,7 @@ function drawChart(series, chains, meta) {
   let lo = Math.min(...all), hi = Math.max(...all);
   const pad = Math.max((hi - lo) * 0.15, 1);
   const tstep = [1, 2, 5, 10, 20, 50, 100, 200, 500].find(s => (hi - lo + 2 * pad) / s <= 6) || 1000;
-  lo = Math.floor((lo - pad) / tstep) * tstep; hi = Math.ceil((hi + pad) / tstep) * tstep;
+  lo = Math.max(0, Math.floor((lo - pad) / tstep) * tstep); hi = Math.ceil((hi + pad) / tstep) * tstep;
   const x = i => pts.length === 1 ? (m.l + W - m.r) / 2 : m.l + i * (W - m.l - m.r) / (pts.length - 1);
   const y = v => m.t + (hi - v) * (H - m.t - m.b) / (hi - lo);
   let g = "";
