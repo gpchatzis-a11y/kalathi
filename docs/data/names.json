@@ -920,7 +920,6 @@
 "mymarket": "Fytro Ζάχαρη Μαύρη 500gr"
 },
 "gala-delta-fresko-1lt": {
-"ab": "ΔΕΛΤΑ | Γάλα Φρέσκο Καθημερινά Πλήρες 1lt",
 "masoutis": "Δέλτα Καθημερινά Φρέσκο Γάλα Πλήρες 3,5% Λιπαρά 1lt.",
 "mymarket": "ΔΕΛΤΑ Καθημερινά Φρέσκο Γάλα Πλήρες 1lt"
 },
@@ -1051,8 +1050,7 @@
 "mymarket": "Hell Energy Drink Peach & Lemon 500ml"
 },
 "hell-energy-drink-zero-white-peach-250ml": {
-"masoutis": "Hell Energy Drink White Peach Zero 250ml.",
-"mymarket": "Hell Energy Drink Zero White Peach 250ml"
+"masoutis": "Hell Energy Drink White Peach Zero 250ml."
 },
 "hell-ice-coffee-cappuccino-250ml": {
 "masoutis": "Hell Ice Coffee Cappuccino 250ml.",
@@ -1782,7 +1780,8 @@
 "mymarket": "Neutro Roberts Αποσμητικό Roll On Powder Fresh 50ml"
 },
 "nikas-fuego-galopoula-kapnisti-choris-glouteni-120gr": {
-"masoutis": "Νίκας Fuego Γαλοπούλα Καπνιστή Χωρίς Γλουτένη 120γρ."
+"masoutis": "Νίκας Fuego Γαλοπούλα Καπνιστή Χωρίς Γλουτένη 120γρ.",
+"mymarket": "Nikas Fuego Γαλοπούλα Καπνιστή Χωρίς Γλουτένη 120gr"
 },
 "nikas-parizaki-choris-glouteni-300gr": {
 "masoutis": "Νίκας Παριζάκι Χωρίς Γλουτένη 300γρ.",
@@ -2194,7 +2193,6 @@
 "mymarket": "Primo Gusto Σάλτσα Verdure Grigliate 350gr"
 },
 "psomi-tost-karamolegkos-480g": {
-"ab": "ΚΑΡΑΜΟΛΕΓΚΟΣ | Ψωμί Τοστ Ψίχα Σίτου 480g",
 "masoutis": "Καραμολέγκος Ψίχα Τοστ Ψωμί Σταρένιο Σε Φέτες 480γρ.",
 "mymarket": "Καραμολέγκος Ψωμί Τοστ Ψίχα Σταρένιο 480gr"
 },
@@ -2565,10 +2563,6 @@
 "masoutis": "Βιτάμ Soft Με Βούτυρο 225γρ.",
 "mymarket": "Βιτάμ Soft Με Βούτυρο 225gr"
 },
-"viva-froutopoto-vyssino-250ml-51": {
-"masoutis": "Viva Φρουτοποτό Βύσσινο 250ml.",
-"mymarket": "Viva Φρουτοποτό Βύσσινο 250ml 5+1"
-},
 "voutyro-lurpak-225g": {
 "ab": "LURPAK | Βούτυρο Ανάλατο Σκαφάκι 225g",
 "mymarket": "Lurpak Βούτυρο Ανάλατο Σκαφάκι 225gr"
@@ -2610,7 +2604,8 @@
 "mymarket": "Υφαντής Γαλοπούλας Καπνιστή Χωρίς Γλουτένη Φέτες 160gr"
 },
 "yfantis-pariza-vrasti-choris-glouteni-fetes-160gr": {
-"masoutis": "Ifantis Πάριζα Βραστή Σε Φέτες Χωρίς Γλουτένη 160γρ."
+"masoutis": "Ifantis Πάριζα Βραστή Σε Φέτες Χωρίς Γλουτένη 160γρ.",
+"mymarket": "Υφαντής Πάριζα Βραστή Χωρίς Γλουτένη Φέτες 160gr"
 },
 "yfantis-parizaki-choris-glouteni-500gr": {
 "masoutis": "Ifantis Παριζάκι Βραστό Χωρίς Γλουτένη 500γρ.",

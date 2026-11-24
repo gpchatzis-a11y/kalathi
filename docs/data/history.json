@@ -1020,7 +1020,6 @@
 "mymarket": 2.42
 },
 "gala-delta-fresko-1lt": {
-"ab": 1.77,
 "masoutis": 1.78,
 "mymarket": 1.77
 },
@@ -1151,8 +1150,7 @@
 "mymarket": 1.11
 },
 "hell-energy-drink-zero-white-peach-250ml": {
-"masoutis": 0.7,
-"mymarket": 0.82
+"masoutis": 0.7
 },
 "hell-ice-coffee-cappuccino-250ml": {
 "masoutis": 1.2,
@@ -1393,7 +1391,7 @@
 },
 "kolios-to-paradosiako-tyri-imiskliro-370gr": {
 "masoutis": 5.95,
-"mymarket": 5.39
+"mymarket": 5.99
 },
 "kri-kri-babies-grow-epidorpio-mpanana-milo-2x140gr": {
 "masoutis": 2.05,
@@ -1882,7 +1880,8 @@
 "mymarket": 2.9
 },
 "nikas-fuego-galopoula-kapnisti-choris-glouteni-120gr": {
-"masoutis": 3.39
+"masoutis": 3.39,
+"mymarket": 3.39
 },
 "nikas-parizaki-choris-glouteni-300gr": {
 "masoutis": 2.8,
@@ -1925,7 +1924,7 @@
 "mymarket": 2.95
 },
 "nounou-gala-zacharoucho-397gr": {
-"masoutis": 2.05,
+"masoutis": 2.1,
 "mymarket": 1.68
 },
 "nounou-gouda-fetes-340gr": {
@@ -2294,7 +2293,6 @@
 "mymarket": 2.8
 },
 "psomi-tost-karamolegkos-480g": {
-"ab": 1.94,
 "masoutis": 1.94,
 "mymarket": 1.94
 },
@@ -2665,10 +2663,6 @@
 "masoutis": 2.97,
 "mymarket": 2.97
 },
-"viva-froutopoto-vyssino-250ml-51": {
-"masoutis": 0.57,
-"mymarket": 2.8
-},
 "voutyro-lurpak-225g": {
 "ab": 4.89,
 "mymarket": 4.71
@@ -2710,7 +2704,8 @@
 "mymarket": 3.38
 },
 "yfantis-pariza-vrasti-choris-glouteni-fetes-160gr": {
-"masoutis": 1.69
+"masoutis": 1.69,
+"mymarket": 1.05
 },
 "yfantis-parizaki-choris-glouteni-500gr": {
 "masoutis": 3.91,

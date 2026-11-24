@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-24T00:57+02:00",
+"updated": "2026-11-24T18:31+02:00",
 "chains": {
 "mymarket": "My Market",
 "ab": "ΑΒ Βασιλόπουλος",
@@ -3771,15 +3771,6 @@
 }
 },
 {
-"id": "viva-froutopoto-vyssino-250ml-51",
-"name": "Viva Φρουτοποτό Βύσσινο 250ml 5+1",
-"category": "Ποτά & νερό",
-"urls": {
-"mymarket": "https://www.mymarket.gr/viva-froutopoto-vyssino-250ml-51",
-"masoutis": "https://www.masoutis.gr/categories/item/viva-froutopoto-bussino-250ml?3777042="
-}
-},
-{
 "id": "sunsweet-chymos-me-damaskina-500ml",
 "name": "Sunsweet Χυμός Με Δαμάσκηνα 500ml",
 "category": "Ποτά & νερό",
@@ -5969,6 +5960,18 @@
 ],
 "errors": [
 {
+"product": "gala-delta-fresko-1lt",
+"chain": "ab",
+"url": "https://www.ab.gr/el/eshop/Galaktokomika-Fytika-Rofimata-and-Eidi-Psygeioy/Gala-and-Fytika-Rofimata/Fresko-gala/Gala-Fresko-Kathimerina-Plires-1lt/p/7617631",
+"error": "TimeoutError: Page.wait_for_selector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-testid=\\\"product-properties-price-info\\\"] [data-testid=\\\"product-block-price\\\"]\") to be visible\n"
+},
+{
+"product": "psomi-tost-karamolegkos-480g",
+"chain": "ab",
+"url": "https://www.ab.gr/el/eshop/Artos-Zacharoplasteio/Psomi-toy-tost/Psomi-toy-tost-Sitoy/Psomi-Tost-Psicha-Sitoy-480g/p/7089061",
+"error": "TimeoutError: Page.wait_for_selector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-testid=\\\"product-properties-price-info\\\"] [data-testid=\\\"product-block-price\\\"]\") to be visible\n"
+},
+{
 "product": "bref-wc-block-blue-activ-hygiene-50gr",
 "chain": "masoutis",
 "url": "https://www.masoutis.gr/categories/item/bref-wc-blue-active-mplok-toualetas-hygiene-50gr?3144490=",
@@ -5981,18 +5984,12 @@
 "error": "TimeoutError: Page.wait_for_selector: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator(\".item-price\") to be visible\n"
 },
 {
-"product": "nikas-fuego-galopoula-kapnisti-choris-glouteni-120gr",
+"product": "hell-energy-drink-zero-white-peach-250ml",
 "chain": "mymarket",
-"url": "https://www.mymarket.gr/nikas-fuego-galopoula-kapnisti-choris-glouteni-120gr",
-"error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-},
-{
-"product": "yfantis-pariza-vrasti-choris-glouteni-fetes-160gr",
-"chain": "mymarket",
-"url": "https://www.mymarket.gr/yfantis-pariza-vrasti-choris-glouteni-fetes-160gr",
+"url": "https://www.mymarket.gr/hell-energy-drink-zero-white-peach-250ml",
 "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
 }
 ],
-"ok": 1333,
-"total": 1337
+"ok": 1330,
+"total": 1335
 }
