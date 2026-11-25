@@ -185,8 +185,7 @@
 "mymarket": "Alfa Μπουγάτσα Θεσσαλονίκης Με Κρέμα 800gr"
 },
 "alfa-tortigia-polyspores-6tem-370gr": {
-"masoutis": "Alfa Τορτίγιες Πολύσπορες 6τεμ. 370γρ.",
-"mymarket": "Alfa Τορτίγια Πολύσπορες 6τεμ 370gr"
+"masoutis": "Alfa Τορτίγιες Πολύσπορες 6τεμ. 370γρ."
 },
 "algida-cornetto-choco-pagoto-6x60gr-90ml": {
 "masoutis": "Algida Cornetto Παγωτό Choco 6x60γρ./90ml.",
@@ -642,8 +641,7 @@
 "mymarket": "Δέλτα Φυτικό Ρόφημα Αμύγδαλο Κακάο 1lt"
 },
 "delta-mmmmilk-oikogeneiako-gala-35-lipara-1lt": {
-"masoutis": "Δέλτα Μμμmilk Οικογενειακό Γάλα 3,5% Λιπαρά 1lt.",
-"mymarket": "ΔΕΛΤΑ μμμMILK Οικογενειακό Γάλα 3,5% Λιπαρά 1lt"
+"masoutis": "Δέλτα Μμμmilk Οικογενειακό Γάλα 3,5% Λιπαρά 1lt."
 },
 "delta-rofima-amygdalo-proteini-1-lt": {
 "masoutis": "Δέλτα Ρόφημα Αμυγδάλου Με Πρωτεΐνη 1lt.",
@@ -920,6 +918,7 @@
 "mymarket": "Fytro Ζάχαρη Μαύρη 500gr"
 },
 "gala-delta-fresko-1lt": {
+"ab": "ΔΕΛΤΑ | Γάλα Φρέσκο Καθημερινά Πλήρες 1lt",
 "masoutis": "Δέλτα Καθημερινά Φρέσκο Γάλα Πλήρες 3,5% Λιπαρά 1lt.",
 "mymarket": "ΔΕΛΤΑ Καθημερινά Φρέσκο Γάλα Πλήρες 1lt"
 },
@@ -1050,7 +1049,8 @@
 "mymarket": "Hell Energy Drink Peach & Lemon 500ml"
 },
 "hell-energy-drink-zero-white-peach-250ml": {
-"masoutis": "Hell Energy Drink White Peach Zero 250ml."
+"masoutis": "Hell Energy Drink White Peach Zero 250ml.",
+"mymarket": "Hell Energy Drink Zero White Peach 250ml"
 },
 "hell-ice-coffee-cappuccino-250ml": {
 "masoutis": "Hell Ice Coffee Cappuccino 250ml.",
@@ -1165,12 +1165,10 @@
 "mymarket": "Jacobs Gold Στιγμιαίος Καφές 200gr"
 },
 "jacobs-kafes-filtrou-eklektos-250gr": {
-"masoutis": "Jacobs Καφές Φίλτρου Εκλεκτός 250γρ.",
-"mymarket": "JACOBS Καφές Φίλτρου Εκλεκτός 250gr"
+"masoutis": "Jacobs Καφές Φίλτρου Εκλεκτός 250γρ."
 },
 "jacobs-kafes-filtrou-karamelomeno-amygdalo-250gr": {
-"masoutis": "Jacobs Καφές Φίλτρου Καραμελωμένο Αμύγδαλο 250γρ.",
-"mymarket": "JACOBS Καφές Φίλτρου Καραμελωμένο Αμύγδαλο 250gr"
+"masoutis": "Jacobs Καφές Φίλτρου Καραμελωμένο Αμύγδαλο 250γρ."
 },
 "jacobs-kafes-filtrou-vanilia-250gr": {
 "masoutis": "Jacobs Καφές Φίλτρου Βανίλια 250γρ.",
@@ -2193,6 +2191,7 @@
 "mymarket": "Primo Gusto Σάλτσα Verdure Grigliate 350gr"
 },
 "psomi-tost-karamolegkos-480g": {
+"ab": "ΚΑΡΑΜΟΛΕΓΚΟΣ | Ψωμί Τοστ Ψίχα Σίτου 480g",
 "masoutis": "Καραμολέγκος Ψίχα Τοστ Ψωμί Σταρένιο Σε Φέτες 480γρ.",
 "mymarket": "Καραμολέγκος Ψωμί Τοστ Ψίχα Σταρένιο 480gr"
 },
